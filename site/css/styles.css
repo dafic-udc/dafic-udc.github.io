@@ -19,10 +19,12 @@ body {
     background: #326e76;
 
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Century Gothic', 'Arial', sans-serif;
     text-overflow: ellipsis;
 
     scroll-behavior: smooth;
+
+
 }
 
 a:link,
@@ -52,6 +54,7 @@ header {
     margin: 1em auto 1em 1em;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #brand-logo {
@@ -73,27 +76,9 @@ main {
     padding-right: 30px;
 
     font-size: 20px;
-    font-weight: 300;
     text-align: justify;
 }
 
-#greeting {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#greeting img {
-    max-width: 80px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-right: 1em;
-}
-
-#greeting h1 {
-    font-size: 40px;
-}
 
 /* Footer */
 
@@ -126,16 +111,6 @@ footer {
 
     main {
         width: 100%;
-    }
-
-    #greeting {
-        flex-flow: column nowrap;
-        margin: 1em auto;
-    }
-
-    #greeting h1 {
-        font-size: 30px;
-        text-align: center;
     }
 
     #links {
