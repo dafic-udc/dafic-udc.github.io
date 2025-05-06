@@ -1,0 +1,153 @@
+:root {
+    --color0: #101010;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    background: #326e76;
+
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-overflow: ellipsis;
+
+    scroll-behavior: smooth;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: var(--color0);
+}
+
+#brand {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em auto 1em 1em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#brand-logo {
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* END HEADER */
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 75%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#greeting {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting img {
+    max-width: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1em;
+}
+
+#greeting h1 {
+    font-size: 40px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0;
+    border-top: 1px solid white;
+    margin-top: auto;
+    background-color: var(--color0);
+}
+
+#links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 75%;
+    list-style-type: none;
+}
+
+#links li {
+    padding: 0.5em 1.5em;
+}
+
+@media screen and (max-width: 680px) {
+
+    main {
+        width: 100%;
+    }
+
+    #greeting {
+        flex-flow: column nowrap;
+        margin: 1em auto;
+    }
+
+    #greeting h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #links {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #links li {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
