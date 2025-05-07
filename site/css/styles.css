@@ -80,6 +80,10 @@ main {
     text-align: justify;
 }
 
+h1 {
+    text-align: center;
+}
+
 
 /* Footer */
 
@@ -107,6 +111,26 @@ footer {
 #links li {
     padding: 0.5em 1.5em;
 }
+
+#socials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+#socials a {
+    display: inline-block;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#socials img {
+    width: 100%;
+}
+
 
 @media screen and (max-width: 680px) {
 
