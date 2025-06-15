@@ -6,7 +6,7 @@ const courseRange = (currentMonth >= 9) ? ` ${currentYear}-${currentYear+1}`
 document.getElementById('course').innerText = courseRange;
 
 // Protect email
-const emailUsername = 'representantes';
+const emailUsername = 'contacto';
 const emailDomain = 'dafic.org';
 const openEmail = () => {
     document.getElementById('email').href = `mailto:${emailUsername}@${emailDomain}`;
