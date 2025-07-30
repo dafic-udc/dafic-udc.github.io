@@ -1,5 +1,6 @@
 :root {
     --color0: #101010;
+    --color-dafic: #326e76;
 }
 
 * {
@@ -16,15 +17,13 @@ body {
     padding: 0;
     margin: 0;
 
-    background: #326e76;
+    background: var(--color-dafic);
 
     color: white;
     font-family: 'Century Gothic', 'Arial', sans-serif;
     text-overflow: ellipsis;
 
     scroll-behavior: smooth;
-
-
 }
 
 a:link,
@@ -68,7 +67,7 @@ header {
 main {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
     width: 75%;
@@ -84,8 +83,13 @@ h1 {
     text-align: center;
 }
 
+p {
+    width: 100%;
+    margin: 1em 0;
+}
 
-/* Footer */
+
+/* FOOTER */
 
 footer {
     display: flex;
