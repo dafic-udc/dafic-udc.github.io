@@ -70,16 +70,14 @@ main {
     align-items: center;
     flex-direction: column;
 
-    width: 75%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 5px 30px;
     margin: auto;
 
     font-size: 20px;
     text-align: justify;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
@@ -100,7 +98,6 @@ footer {
     width: 100%;
     padding: 1em 0;
     border-top: 1px solid white;
-    margin-top: auto;
     background-color: var(--color0);
 }
 

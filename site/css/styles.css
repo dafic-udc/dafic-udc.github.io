@@ -1,0 +1,69 @@
+
+/* ACTIVITIES */
+
+#activities-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#activities-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 240px;
+    border: 5px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+#activities-list li a {
+    text-decoration: none;
+}
+
+.activity-icon {
+    width: 100%;
+    height: 160px;
+    border-bottom: 5px solid black;
+    background-color: var(--color-dafic);
+}
+
+.activity-name {
+    width: 100%;
+    height: 4em;
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-dafic);
+}
+
+.activity-description {
+    width: 100%;
+    min-height: 7em;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+    color: black;
+}
+
+.activity-date {
+    width: 100%;
+    border-top: 5px solid black;
+    padding: 0.5em;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: grey;
+}
