@@ -26,8 +26,12 @@
     background-color: white;
 }
 
-#activities-list li a {
+.activity-link {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 .activity-icon {
