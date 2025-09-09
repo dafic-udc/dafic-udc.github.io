@@ -1,9 +1,9 @@
 ACTIVITIES = [
     [
         "Concurso de fotografía",
-        "Participa no noso concurso de fotografía e gaña fantásticos premios!",
-        "08/09/2025",
-        "./assets/img/Logo_DAFIC_redondo.svg",
+        "Participa no noso concurso de fotografía e saca o teu lado máis creativo!",
+        "08/09/2025 - 19/09/2025",
+        "./assets/img/activities/actividad_fotofic.png",
         "https://dafic.org/concurso-fotografia-2025/"
     ],
 
@@ -11,28 +11,45 @@ ACTIVITIES = [
         "Batallas matemáticas",
         "Gústache desafiar a túa mente? Participa nas nosas batallas matemáticas e demostra o teu talento!",
         "15/09/2025",
-        "./assets/img/Logo_DAFIC_redondo.svg"
+        "./assets/img/activities/actividad_batallas_matematicas.png",
+        "./assets/img/poster/cartel_batallas_matematicas.png"
     ],
-    
+
     [
         "Torneo DAFIC e-Sports",
         "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria!",
-        "16/09/2025",
-        "./assets/img/Logo_DAFIC_redondo.svg"
+        "17/09/2025",
+        "./assets/img/activities/actividad_e_sports.png"
     ],
 
     [
         "Quedada de Streetpass",
         "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía!",
-        "16/09/2025",
-        "./assets/img/Logo_DAFIC_redondo.svg"
+        "17/09/2025",
+        "./assets/img/activities/actividad_streetpass.png"
     ],
 
     [
         "Xornadas de Benvida da UDC",
         "Acércate ao noso stand no estadio de Elviña o día 18 de setembro para coñecer DAFIC e todo o que facemos!",
         "18/09/2025",
-        "./assets/img/Logo_DAFIC_redondo.svg"
+        "./assets/img/activities/actividad_benvida_udc.png"
+    ],
+
+    [
+        "Charla Egresados GEI",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC",
+        "23/09/2025",
+        "./assets/img/activities/actividad_egresados_gei.png",
+        "./assets/img/poster/cartel_egresados_gei.png"
+    ],
+
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC",
+        "24/09/2025",
+        "./assets/img/activities/actividad_egresados_gced.png",
+        "./assets/img/poster/cartel_egresados_gced.png"
     ]
 ]
 
