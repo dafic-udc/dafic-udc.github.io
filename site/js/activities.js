@@ -19,14 +19,16 @@ ACTIVITIES = [
         "Torneo DAFIC e-Sports",
         "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria!",
         "17/09/2025",
-        "./assets/img/activities/actividad_e_sports.png"
+        "./assets/img/activities/actividad_e_sports.png",
+        "https://forms.office.com/e/3f4kZdvKkt"
     ],
 
     [
         "Quedada de Streetpass",
         "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía!",
         "17/09/2025",
-        "./assets/img/activities/actividad_streetpass.png"
+        "./assets/img/activities/actividad_streetpass.png",
+        "./assets/img/poster/cartel_streetpass.png"
     ],
 
     [
