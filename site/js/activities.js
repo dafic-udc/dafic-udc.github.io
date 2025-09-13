@@ -40,7 +40,7 @@ ACTIVITIES = [
 
     [
         "Charla Egresados GEI",
-        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
         "23/09/2025",
         "./assets/img/activities/actividad_egresados_gei.png",
         "./assets/img/poster/cartel_egresados_gei.png"
@@ -48,7 +48,7 @@ ACTIVITIES = [
 
     [
         "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
         "24/09/2025",
         "./assets/img/activities/actividad_egresados_gced.png",
         "./assets/img/poster/cartel_egresados_gced.png"
