@@ -1,7 +1,7 @@
 ACTIVITIES = [
     [
         "Concurso de fotografía",
-        "Participa no noso concurso de fotografía e saca o teu lado máis creativo!",
+        "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "08/09/2025 - 19/09/2025",
         "./assets/img/activities/actividad_fotofic.png",
         "https://dafic.org/concurso-fotografia-2025/"
@@ -9,7 +9,7 @@ ACTIVITIES = [
 
     [
         "Batallas matemáticas",
-        "Gústache desafiar a túa mente? Participa nas nosas batallas matemáticas e demostra o teu talento!",
+        "Gústache desafiar a túa mente? Participa nas nosas batallas matemáticas e demostra o teu talento! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "15/09/2025",
         "./assets/img/activities/actividad_batallas_matematicas.png",
         "./assets/img/poster/cartel_batallas_matematicas.png"
@@ -17,7 +17,7 @@ ACTIVITIES = [
 
     [
         "Torneo DAFIC e-Sports",
-        "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria!",
+        "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "17/09/2025",
         "./assets/img/activities/actividad_e_sports.png",
         "https://forms.office.com/e/3f4kZdvKkt"
@@ -25,7 +25,7 @@ ACTIVITIES = [
 
     [
         "Quedada de Streetpass",
-        "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía!",
+        "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "17/09/2025",
         "./assets/img/activities/actividad_streetpass.png",
         "./assets/img/poster/cartel_streetpass.png"
@@ -33,7 +33,7 @@ ACTIVITIES = [
 
     [
         "Xornadas de Benvida da UDC",
-        "Acércate ao noso stand no estadio de Elviña o día 18 de setembro para coñecer DAFIC e todo o que facemos!",
+        "Acércate ao noso stand no estadio de Elviña o día 18 de setembro para coñecer DAFIC e todo o que facemos! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "18/09/2025",
         "./assets/img/activities/actividad_benvida_udc.png"
     ],
