@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="gl">
+
+<head>
+	<meta charset="UTF-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+	<title>DAFIC - Inscrición</title>
+	<link rel="icon" type="image/png" href="./assets/img/Logo_DAFIC_redondo.svg" ></link>
+	<link rel="stylesheet" type="text/css" href="./css/layout.css" ></link>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" ></link>
+	<script src="./js/inscricion.js" ></script>
+</head>
+
+<body>
+	<header>
+		<a id="brand" href="https://dafic.org/">
+			<img id="brand-logo" alt="DAFIC" src="./assets/img/Logo_DAFIC_redondo.svg" ></img>
+			<span id="brand-name">DAFIC</span>
+		</a>
+	</header>
+	<main>
+		<form>
+			<label for="name">Nome</label>
+			<br></br>
+			<input type="text" id="name" placeholder="Xan" required="required"></input>
+
+			<br></br>
+
+			<label for="surname">Apelidos</label>
+			<br></br>
+			<input type="text" id="surname" placeholder="Ninguén" required="required"></input>
+
+			<br></br>
+
+			<label for="degree">Relación coa UDC</label>
+			<br></br>
+			<select id="degree" required="required" size="5">
+				<option value="gei">Estudante no Grao en Enxeñaría Informática</option>
+				<option value="gced">Estudante no Grao en Ciencia e Enxeñaría de Datos</option>
+				<option value="gia">Estudante no Grao en Intelixencia Artificial</option>
+				<option value="master">Estudante nalgún mestrado da Facultade de Informática</option>
+				<option value="etc">Outro</option>
+			</select>
+
+			<br></br>
+
+			<label for="year">Cal é o curso máis alto no que te matriculaches?</label>
+			<br></br>
+			<select id="year" required="required" size="7">
+				<option value="1G">1º de Grao</option>
+				<option value="2G">2º de Grao</option>
+				<option value="3G">3º de Grao</option>
+				<option value="4G">4º de Grao</option>
+				<option value="1M">1º de Mestrado</option>
+				<option value="2M">2º de Mestrado</option>
+				<option value="alumni">Xa rematei</option>
+			</select>
+
+			<br></br>
+
+		</form>
+			<button onclick="addLink()">Xerar inscrición</button>
+		<div id="link-anchor"></div>
+	</main>
+
+	<footer>
+		<ul id="links">
+			<li>
+				<a id="email" href="#">
+					<span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://udcgal.sharepoint.com/:b:/s/DAFIC/ESZu7jmK075Msy7Yn8WYD5UBUAD0B68F5lpNQ5LphIM0XA?e=tcuNRE"
+					target="_blank">
+					Estatutos
+				</a>
+			</li>
+			<li>
+				<a href="/inscricion.html" target="_blank">
+					Asóciate
+				</a>
+			</li>
+		</ul>
+		<div id="socials">
+			<a href="https://github.com/dafic-udc">
+				<img title="GitHub" src="https://simpleicons.vercel.app/github/FFFFFF" alt="GitHub"></img>
+			</a>
+			<a href="https://www.instagram.com/dafic_udc/">
+				<img title="Instagram" src="https://simpleicons.vercel.app/instagram/FF0069" alt="Instagram"></img>
+			</a>
+			<a href="https://linktr.ee/representantes.fic">
+				<img title="Linktree" src="https://simpleicons.vercel.app/linktree/43E55E" alt="Linktree"></img>
+			</a>
+		</div>
+	</footer>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
