@@ -65,6 +65,7 @@ const showActivities = () => {
 
         const activityIcon = document.createElement('img');
         activityIcon.className = 'activity-icon';
+        activityIcon.alt = `Icona da actividade ${activity[0]}`;
         activityIcon.src = activity[3];
 
         const activityName = document.createElement('span');
