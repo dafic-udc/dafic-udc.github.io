@@ -1,4 +1,5 @@
-ACTIVITIES = [
+NEXT_ACTIVITIES = [
+
     [
         "Concurso de fotografía",
         "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
@@ -6,6 +7,25 @@ ACTIVITIES = [
         "./assets/img/activities/actividad_fotofic.png",
         "https://dafic.org/concurso-fotografia-2025/"
     ],
+
+    [
+        "Charla Egresados GEI",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "23/09/2025",
+        "./assets/img/activities/actividad_egresados_gei.png",
+        "./assets/img/poster/cartel_egresados_gei.png"
+    ],
+
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "24/09/2025",
+        "./assets/img/activities/actividad_egresados_gced.png",
+        "./assets/img/poster/cartel_egresados_gced.png"
+    ]
+]
+
+PREVIOUS_ACTIVITIES = [
 
     [
         "Batallas matemáticas",
@@ -37,30 +57,14 @@ ACTIVITIES = [
         "18/09/2025",
         "./assets/img/activities/actividad_benvida_udc.png"
     ],
-
-    [
-        "Charla Egresados GEI",
-        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "23/09/2025",
-        "./assets/img/activities/actividad_egresados_gei.png",
-        "./assets/img/poster/cartel_egresados_gei.png"
-    ],
-
-    [
-        "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "24/09/2025",
-        "./assets/img/activities/actividad_egresados_gced.png",
-        "./assets/img/poster/cartel_egresados_gced.png"
-    ]
 ]
 
-const showActivities = () => {
+const showActivities = (activityList, listID) => {
 
-    const activities = document.getElementById('activities-list');
+    const activities = document.getElementById(listID);
     if (!activities) return;
 
-    ACTIVITIES.forEach(activity => {
+    activityList.forEach(activity => {
         const activityItem = document.createElement('li');
 
         const activityIcon = document.createElement('img');
@@ -101,4 +105,5 @@ const showActivities = () => {
     });
 };
 
-showActivities();
+showActivities(PREVIOUS_ACTIVITIES, 'previous-activities-list');
+showActivities(NEXT_ACTIVITIES, 'next-activities-list');

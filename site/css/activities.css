@@ -1,7 +1,6 @@
-
 /* ACTIVITIES */
 
-#activities-list {
+.activities-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -12,7 +11,7 @@
     list-style-type: none;
 }
 
-#activities-list li {
+.activities-list li {
     display: flex;
     flex-direction: column;
     align-items: center;
