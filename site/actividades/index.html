@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DAFIC - Welcome to da FIC</title>
-	<link rel="icon" type="image/png" href="./assets/img/Logo_DAFIC_redondo.svg">
+	<link rel="icon" type="image/png" href="/assets/img/Logo_DAFIC_redondo.svg">
 	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="/actividades/assets/css/activities.css">
 </head>
@@ -13,35 +13,30 @@
 <body>
 	<header>
 		<a id="brand" href="/">
-			<img id="brand-logo" alt="Logo DAFIC" src="./assets/img/Logo_DAFIC_redondo.svg">
+			<img id="brand-logo" alt="Logo DAFIC" src="/assets/img/Logo_DAFIC_redondo.svg">
 			<span id="brand-name">DAFIC</span>
 		</a>
 	</header>
 	<main>
-		<section id="welcome">
-			<h1>Benvido, curso<span id="course"></span>.</h1>
-			<script src="/assets/js/course.js"></script>
-			<p>
-				Somos DAFIC, a asociación <b>División do Alumnado da FIC</b>. Somos estudantes co obxectivo de apoiar á
-				representación estudiantil e realizar actividades de interese para o estudantado da facultade.
-			</p>
-		</section>
 
 		<section id="activities">
-			<h2>Actividades</h2>
+			<h1>Actividades</h1>
 
-			<h3>Próximas actividades</h3>
+			<h2>Próximas actividades</h2>
 			<ul id="next-activities-list" class="activities-list">
 				<!-- Updated by activities.js -->
 			</ul>
-			<script src="/actividades/assets/js/activities.js"></script>
+
+			<h2>Actividades realizadas</h2>
+			<ul id="previous-activities-list" class="activities-list">
+				<!-- Updated by activities.js -->
+			</ul>
+			
+			<script src="./assets/js/activities.js"></script>
 			<script>
 				showActivities(NEXT_ACTIVITIES, 'next-activities-list');
+				showActivities(PREVIOUS_ACTIVITIES, 'previous-activities-list');
 			</script>
-
-			<p class="centered">
-				<a href="/actividades/">Consulta todas as actividades aquí</a>
-			</p>
 		</section>
 	</main>
 
@@ -49,7 +44,7 @@
 		<ul id="links">
 			<li>
 				<a id="email" href="#">
-					<noscript></noscript><span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span></noscript>
+					<span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span>
 				</a>
 			</li>
 			<li>
@@ -59,7 +54,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="inscricion.xhtml" target="_blank"> <!-- https://forms.cloud.microsoft/e/JEyshyRVgy -->
+				<a href="https://forms.cloud.microsoft/e/JEyshyRVgy" target="_blank">
 					Asóciate
 				</a>
 			</li>
@@ -75,9 +70,9 @@
 				<img title="Linktree" src="https://simpleicons.vercel.app/linktree/43E55E" alt="Linktree">
 			</a>
 		</div>
+		<script src="/assets/js/protect_email.js"></script>
 	</footer>
 
-	<script src="./js/script.js"></script>
 </body>
 
 </html>
