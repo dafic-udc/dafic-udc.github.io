@@ -7,19 +7,20 @@
 	<title>DAFIC - Welcome to da FIC</title>
 	<link rel="icon" type="image/png" href="./assets/img/Logo_DAFIC_redondo.svg">
 	<link rel="stylesheet" type="text/css" href="./css/layout.css">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/activities.css">
 </head>
 
 <body>
 	<header>
 		<a id="brand" href="https://dafic.org/">
-			<img id="brand-logo" alt="DAFIC" src="./assets/img/Logo_DAFIC_redondo.svg">
+			<img id="brand-logo" alt="Logo DAFIC" src="./assets/img/Logo_DAFIC_redondo.svg">
 			<span id="brand-name">DAFIC</span>
 		</a>
 	</header>
 	<main>
-		<h1>Benvido, curso<span id="course"></span>.</h1>
 		<section id="welcome">
+			<h1>Benvido, curso<span id="course"></span>.</h1>
+			<script src="./js/course.js"></script>
 			<p>
 				Somos DAFIC, a asociación <b>División do Alumnado da FIC</b>. Somos estudantes co obxectivo de apoiar á
 				representación estudiantil e realizar actividades de interese para o estudantado da facultade.
@@ -27,10 +28,18 @@
 		</section>
 
 		<section id="activities">
-			<h2>Próximas actividades</h2>
-			<ul id="activities-list">
+			<h2>Actividades</h2>
+
+			<h3>Próximas actividades</h3>
+			<ul id="next-activities-list" class="activities-list">
 				<!-- Updated by activities.js -->
 			</ul>
+
+			<h3>Actividades realizadas</h3>
+			<ul id="previous-activities-list" class="activities-list">
+				<!-- Updated by activities.js -->
+			</ul>
+			
 			<script src="./js/activities.js"></script>
 		</section>
 	</main>
@@ -65,9 +74,9 @@
 				<img title="Linktree" src="https://simpleicons.vercel.app/linktree/43E55E" alt="Linktree">
 			</a>
 		</div>
+		<script src="./js/protect_email.js"></script>
 	</footer>
 
-	<script src="./js/script.js"></script>
 </body>
 
 </html>
