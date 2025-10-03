@@ -23,19 +23,19 @@
 			<h1>Actividades</h1>
 
 			<h2>Próximas actividades</h2>
-			<ul id="next-activities-list" class="activities-list">
+			<div id="next-activities-list">
 				<!-- Updated by activities.js -->
-			</ul>
+			</div>
 
 			<h2>Actividades realizadas</h2>
-			<ul id="previous-activities-list" class="activities-list">
+			<div id="previous-activities-list">
 				<!-- Updated by activities.js -->
-			</ul>
+			</div>
 			
 			<script src="./assets/js/activities.js"></script>
 			<script>
-				showActivities(NEXT_ACTIVITIES, 'next-activities-list');
-				showActivities(PREVIOUS_ACTIVITIES, 'previous-activities-list');
+				showNextActivities();
+				showPreviousActivities();
 			</script>
 		</section>
 	</main>

@@ -1,8 +1,8 @@
-NEXT_ACTIVITIES = [
+const NEXT_ACTIVITIES = [
 
 ]
 
-PREVIOUS_ACTIVITIES = [
+const PREVIOUS_ACTIVITIES = [
 
     [
         "Concurso de fotografía",
@@ -60,12 +60,22 @@ PREVIOUS_ACTIVITIES = [
     ],
 ]
 
-const showActivities = (activityList, listID) => {
+const NEXT_ACTIVITIES_CONTAINER_ID = 'next-activities-list';
+const PREVIOUS_ACTIVITIES_CONTAINER_ID = 'previous-activities-list';
 
-    const activities = document.getElementById(listID);
-    if (!activities) return;
+const showActivities = (activities, activitiesContainerID) => {
 
-    activityList.forEach(activity => {
+    // Retrieve <div> container:
+    const activitiesContainer = document.getElementById(activitiesContainerID);
+    if (!activitiesContainer) return;
+
+    // Create <ul> element to hold activities:
+    const activitiesList = document.createElement('ul');
+    activitiesList.className = 'activities-list';
+    
+    // Populate the list with activities:
+    activities.forEach(activity => {
+
         const activityItem = document.createElement('li');
 
         const activityIcon = document.createElement('img');
@@ -85,16 +95,18 @@ const showActivities = (activityList, listID) => {
         activityDate.innerText = activity[2];
 
         if (activity.length > 4) {
+
+            // If there's a link, wrap the icon and name in an <a> tag:
             const activityLink = document.createElement('a');
             activityLink.className = 'activity-link';
             activityLink.href = activity[4];
 
             activityLink.appendChild(activityIcon);
             activityLink.appendChild(activityName);
-            activityLink.appendChild(activityDesc);
-            activityLink.appendChild(activityDate);
 
             activityItem.appendChild(activityLink);
+            activityItem.appendChild(activityDesc);
+            activityItem.appendChild(activityDate);
         } else {
             activityItem.appendChild(activityIcon);
             activityItem.appendChild(activityName);
@@ -102,6 +114,54 @@ const showActivities = (activityList, listID) => {
             activityItem.appendChild(activityDate);
         }
 
-        activities.appendChild(activityItem);
+        // Append the activity item to the list:
+        activitiesList.appendChild(activityItem);
     });
+
+    // Append the populated list to the container:
+    activitiesContainer.appendChild(activitiesList);
+};
+
+const showNextActivities = (activitiesContainerID) => {
+
+    const FORM_LINK = 'https://forms.office.com/e/jC0tx2nWaM';
+
+    if (activitiesContainerID === undefined) {
+        activitiesContainerID = NEXT_ACTIVITIES_CONTAINER_ID;
+    }
+
+    // Retrieve <div> container:
+    const activitiesContainer = document.getElementById(activitiesContainerID);
+    if (!activitiesContainer) return;
+
+    if (NEXT_ACTIVITIES.length === 0) {
+
+        // If no activities, show a message and a link to propose an activity:
+        const noActivitiesMessage = document.createElement('p');
+        noActivitiesMessage.className = 'centered';
+        noActivitiesMessage.innerText = 'Non hai actividades próximas. Podes propoñer a túa propia actividade neste formulario:';
+
+        noActivitiesMessage.appendChild(document.createElement('br'));
+
+        const proposalLink = document.createElement('a');
+        proposalLink.href = FORM_LINK;
+        proposalLink.innerText = 'Propoñer actividade';
+        proposalLink.target = '_blank';
+        proposalLink.className = 'centered';
+        noActivitiesMessage.appendChild(proposalLink);
+
+        activitiesContainer.appendChild(noActivitiesMessage);
+    } else {
+        showActivities(NEXT_ACTIVITIES, listID);
+    }
+};
+
+const showPreviousActivities = (activitiesContainerID) => {
+
+    // Default to PREVIOUS_ACTIVITIES_CONTAINER_ID if no ID is provided
+    if (activitiesContainerID === undefined) {
+        activitiesContainerID = PREVIOUS_ACTIVITIES_CONTAINER_ID;
+    }
+
+    showActivities(PREVIOUS_ACTIVITIES, activitiesContainerID);
 };
