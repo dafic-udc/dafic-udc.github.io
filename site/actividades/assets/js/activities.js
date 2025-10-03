@@ -1,11 +1,23 @@
 NEXT_ACTIVITIES = [
 
+]
+
+PREVIOUS_ACTIVITIES = [
+
     [
         "Concurso de fotografía",
         "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "08/09/2025 - 19/09/2025",
+        "08/09/2025 - 25/09/2025",
         "/actividades/assets/img/activities/actividad_fotofic.png",
         "https://dafic.org/concurso-fotografia-2025/"
+    ],
+
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "24/09/2025",
+        "/actividades/assets/img/activities/actividad_egresados_gced.png",
+        "/actividades/assets/img/poster/cartel_egresados_gced.png"
     ],
 
     [
@@ -15,17 +27,6 @@ NEXT_ACTIVITIES = [
         "/actividades/assets/img/activities/actividad_egresados_gei.png",
         "/actividades/assets/img/poster/cartel_egresados_gei.png"
     ],
-
-    [
-        "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "24/09/2025",
-        "/actividades/assets/img/activities/actividad_egresados_gced.png",
-        "/actividades/assets/img/poster/cartel_egresados_gced.png"
-    ]
-]
-
-PREVIOUS_ACTIVITIES = [
 
     [
         "Xornadas de Benvida da UDC",
