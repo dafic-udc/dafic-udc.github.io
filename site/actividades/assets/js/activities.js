@@ -1,0 +1,167 @@
+const NEXT_ACTIVITIES = [
+
+]
+
+const PREVIOUS_ACTIVITIES = [
+
+    [
+        "Concurso de fotografía",
+        "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "08/09/2025 - 25/09/2025",
+        "/actividades/assets/img/activities/actividad_fotofic.png",
+        "https://dafic.org/concurso-fotografia-2025/"
+    ],
+
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "24/09/2025",
+        "/actividades/assets/img/activities/actividad_egresados_gced.png",
+        "/actividades/assets/img/poster/cartel_egresados_gced.png"
+    ],
+
+    [
+        "Charla Egresados GEI",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "23/09/2025",
+        "/actividades/assets/img/activities/actividad_egresados_gei.png",
+        "/actividades/assets/img/poster/cartel_egresados_gei.png"
+    ],
+
+    [
+        "Xornadas de Benvida da UDC",
+        "Acércate ao noso stand no estadio de Elviña o día 18 de setembro para coñecer DAFIC e todo o que facemos! Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "18/09/2025",
+        "/actividades/assets/img/activities/actividad_benvida_udc.png"
+    ],
+
+    [
+        "Torneo DAFIC e-Sports",
+        "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria! Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "17/09/2025",
+        "/actividades/assets/img/activities/actividad_e_sports.png",
+        "https://forms.office.com/e/3f4kZdvKkt"
+    ],
+
+    [
+        "Quedada de Streetpass",
+        "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía! Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "17/09/2025",
+        "/actividades/assets/img/activities/actividad_streetpass.png",
+        "/actividades/assets/img/poster/cartel_streetpass.png"
+    ],
+
+    [
+        "Batallas matemáticas",
+        "Gústache desafiar a túa mente? Participa nas nosas batallas matemáticas e demostra o teu talento! Esta actividade conta co apoio das axudas do VEE da UDC.",
+        "15/09/2025",
+        "/actividades/assets/img/activities/actividad_batallas_matematicas.png",
+        "/actividades/assets/img/poster/cartel_batallas_matematicas.png"
+    ],
+]
+
+const NEXT_ACTIVITIES_CONTAINER_ID = 'next-activities-list';
+const PREVIOUS_ACTIVITIES_CONTAINER_ID = 'previous-activities-list';
+
+const showActivities = (activities, activitiesContainerID) => {
+
+    // Retrieve <div> container:
+    const activitiesContainer = document.getElementById(activitiesContainerID);
+    if (!activitiesContainer) return;
+
+    // Create <ul> element to hold activities:
+    const activitiesList = document.createElement('ul');
+    activitiesList.className = 'activities-list';
+    
+    // Populate the list with activities:
+    activities.forEach(activity => {
+
+        const activityItem = document.createElement('li');
+
+        const activityIcon = document.createElement('img');
+        activityIcon.className = 'activity-icon';
+        activityIcon.src = activity[3];
+
+        const activityName = document.createElement('span');
+        activityName.className = 'activity-name';
+        activityName.innerText = activity[0];
+
+        const activityDesc = document.createElement('p');
+        activityDesc.className = 'activity-description';
+        activityDesc.innerText = activity[1];
+
+        const activityDate = document.createElement('span');
+        activityDate.className = 'activity-date';
+        activityDate.innerText = activity[2];
+
+        if (activity.length > 4) {
+
+            // If there's a link, wrap the icon and name in an <a> tag:
+            const activityLink = document.createElement('a');
+            activityLink.className = 'activity-link';
+            activityLink.href = activity[4];
+
+            activityLink.appendChild(activityIcon);
+            activityLink.appendChild(activityName);
+
+            activityItem.appendChild(activityLink);
+            activityItem.appendChild(activityDesc);
+            activityItem.appendChild(activityDate);
+        } else {
+            activityItem.appendChild(activityIcon);
+            activityItem.appendChild(activityName);
+            activityItem.appendChild(activityDesc);
+            activityItem.appendChild(activityDate);
+        }
+
+        // Append the activity item to the list:
+        activitiesList.appendChild(activityItem);
+    });
+
+    // Append the populated list to the container:
+    activitiesContainer.appendChild(activitiesList);
+};
+
+const showNextActivities = (activitiesContainerID) => {
+
+    const FORM_LINK = 'https://forms.office.com/e/jC0tx2nWaM';
+
+    if (activitiesContainerID === undefined) {
+        activitiesContainerID = NEXT_ACTIVITIES_CONTAINER_ID;
+    }
+
+    // Retrieve <div> container:
+    const activitiesContainer = document.getElementById(activitiesContainerID);
+    if (!activitiesContainer) return;
+
+    if (NEXT_ACTIVITIES.length === 0) {
+
+        // If no activities, show a message and a link to propose an activity:
+        const noActivitiesMessage = document.createElement('p');
+        noActivitiesMessage.className = 'centered';
+        noActivitiesMessage.innerText = 'Non hai actividades próximas. Podes propoñer a túa propia actividade neste formulario:';
+
+        noActivitiesMessage.appendChild(document.createElement('br'));
+
+        const proposalLink = document.createElement('a');
+        proposalLink.href = FORM_LINK;
+        proposalLink.innerText = 'Propoñer actividade';
+        proposalLink.target = '_blank';
+        proposalLink.className = 'centered';
+        noActivitiesMessage.appendChild(proposalLink);
+
+        activitiesContainer.appendChild(noActivitiesMessage);
+    } else {
+        showActivities(NEXT_ACTIVITIES, listID);
+    }
+};
+
+const showPreviousActivities = (activitiesContainerID) => {
+
+    // Default to PREVIOUS_ACTIVITIES_CONTAINER_ID if no ID is provided
+    if (activitiesContainerID === undefined) {
+        activitiesContainerID = PREVIOUS_ACTIVITIES_CONTAINER_ID;
+    }
+
+    showActivities(PREVIOUS_ACTIVITIES, activitiesContainerID);
+};

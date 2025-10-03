@@ -18,30 +18,25 @@
 		</a>
 	</header>
 	<main>
-		<section id="welcome">
-			<h1>Benvido, curso<span id="course"></span>.</h1>
-			<script src="/assets/js/course.js"></script>
-			<p>
-				Somos DAFIC, a asociación <b>División do Alumnado da FIC</b>. Somos estudantes co obxectivo de apoiar á
-				representación estudiantil e realizar actividades de interese para o estudantado da facultade.
-			</p>
-		</section>
 
 		<section id="activities">
-			<h2>Actividades</h2>
+			<h1>Actividades</h1>
 
-			<h3>Próximas actividades</h3>
-			<div id="next-activities-list" class="activities-list">
+			<h2>Próximas actividades</h2>
+			<div id="next-activities-list">
 				<!-- Updated by activities.js -->
 			</div>
-			<script src="/actividades/assets/js/activities.js"></script>
+
+			<h2>Actividades realizadas</h2>
+			<div id="previous-activities-list">
+				<!-- Updated by activities.js -->
+			</div>
+			
+			<script src="./assets/js/activities.js"></script>
 			<script>
 				showNextActivities();
+				showPreviousActivities();
 			</script>
-
-			<p class="centered">
-				<a href="/actividades/">Consulta todas as actividades aquí</a>
-			</p>
 		</section>
 	</main>
 
@@ -49,7 +44,7 @@
 		<ul id="links">
 			<li>
 				<a id="email" href="#">
-					<noscript></noscript><span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span></noscript>
+					<span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span>
 				</a>
 			</li>
 			<li>
