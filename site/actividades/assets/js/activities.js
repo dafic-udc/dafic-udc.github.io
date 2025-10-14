@@ -40,7 +40,7 @@ const PREVIOUS_ACTIVITIES = [
         "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "17/09/2025",
         "/actividades/assets/img/activities/actividad_e_sports.png",
-        "https://forms.office.com/e/3f4kZdvKkt"
+        "/actividades/assets/img/poster/cartel_streetpass.png"
     ],
 
     [
@@ -58,6 +58,29 @@ const PREVIOUS_ACTIVITIES = [
         "/actividades/assets/img/activities/actividad_batallas_matematicas.png",
         "/actividades/assets/img/poster/cartel_batallas_matematicas.png"
     ],
+
+    [
+        "Visita ao CITIC",
+        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
+        "05/05/2025 - 07/05/2025",
+        "/actividades/assets/img/activities/actividad_visita_ao_citic_maio_2025.png"
+    ],
+
+    [
+        "Charla LaTeX",
+        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
+        "25/03/2025",
+        "/actividades/assets/img/activities/actividad_charla_latex_marzo_2025.png",
+        "https://github.com/dafic-udc/charla-latex-gpul-2025"
+    ],
+
+    [
+        "Charla Repres FIC",
+        "Que fai un representante de estudantes? Por que é importante a representación estudantil? Descubre isto e máis nesta charla!",
+        "20/02/2025",
+        "/actividades/assets/img/activities/actividad_charla_repres_fic.png",
+        "/actividades/assets/img/poster/cartel_repres_fic.png"
+    ],
 ]
 
 const NEXT_ACTIVITIES_CONTAINER_ID = 'next-activities-list';
@@ -72,7 +95,7 @@ const showActivities = (activities, activitiesContainerID) => {
     // Create <ul> element to hold activities:
     const activitiesList = document.createElement('ul');
     activitiesList.className = 'activities-list';
-    
+
     // Populate the list with activities:
     activities.forEach(activity => {
 
