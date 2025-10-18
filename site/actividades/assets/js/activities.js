@@ -10,7 +10,7 @@ const NEXT_ACTIVITIES = [
         "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
         "05/11/2025 (17:30)",
         "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
-        "https://github.com/dafic-udc/charla-latex-gpul-2025"
+        "/actividades/assets/img/poster/cartel_latex_novembro_2025.png"
     ],
     [
         "Charla Markdown",
