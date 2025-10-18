@@ -39,7 +39,7 @@ const PREVIOUS_ACTIVITIES = [
         "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
         "08/09/2025 - 25/09/2025",
         "/actividades/assets/img/activities/actividad_fotofic.png",
-        "https://dafic.org/concurso-fotografia-2025/"
+        "https://www.instagram.com/p/DPFMKQCCKMU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     ],
 
     [
