@@ -1,5 +1,35 @@
 const NEXT_ACTIVITIES = [
-
+    [
+        "Dungeons & Dragons",
+        "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
+        "22/10/2025 (19:30)",
+        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png"
+    ],
+    [
+        "Charla LaTeX",
+        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
+        "05/11/2025 (17:30)",
+        "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
+        "https://github.com/dafic-udc/charla-latex-gpul-2025"
+    ],
+    [
+        "Charla Markdown",
+        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
+        "2025",
+        "/actividades/assets/img/activities/actividad_charla_markdown_2025.png"
+    ],
+    [
+        "Visita ao CITIC",
+        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
+        "2025",
+        "/actividades/assets/img/activities/actividad_visita_ao_citic_2025.png"
+    ],
+    [
+        "Visita ao CITEEC",
+        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
+        "2025",
+        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2025.png"
+    ]
 ]
 
 const PREVIOUS_ACTIVITIES = [
@@ -147,8 +177,6 @@ const showActivities = (activities, activitiesContainerID) => {
 
 const showNextActivities = (activitiesContainerID) => {
 
-    const FORM_LINK = 'https://forms.office.com/e/jC0tx2nWaM';
-
     if (activitiesContainerID === undefined) {
         activitiesContainerID = NEXT_ACTIVITIES_CONTAINER_ID;
     }
@@ -162,20 +190,11 @@ const showNextActivities = (activitiesContainerID) => {
         // If no activities, show a message and a link to propose an activity:
         const noActivitiesMessage = document.createElement('p');
         noActivitiesMessage.className = 'centered';
-        noActivitiesMessage.innerText = 'Non hai actividades próximas. Podes propoñer a túa propia actividade neste formulario:';
-
+        noActivitiesMessage.innerText = 'Non hai actividades próximas.';
         noActivitiesMessage.appendChild(document.createElement('br'));
-
-        const proposalLink = document.createElement('a');
-        proposalLink.href = FORM_LINK;
-        proposalLink.innerText = 'Propoñer actividade';
-        proposalLink.target = '_blank';
-        proposalLink.className = 'centered';
-        noActivitiesMessage.appendChild(proposalLink);
-
         activitiesContainer.appendChild(noActivitiesMessage);
     } else {
-        showActivities(NEXT_ACTIVITIES, listID);
+        showActivities(NEXT_ACTIVITIES, activitiesContainerID);
     }
 };
 
