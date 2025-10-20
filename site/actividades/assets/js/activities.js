@@ -3,7 +3,8 @@ const NEXT_ACTIVITIES = [
         "Dungeons & Dragons",
         "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
         "22/10/2025 (19:30)",
-        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png"
+        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png",
+        "/actividades/assets/img/poster/cartel_charla_d&d.png"
     ],
     [
         "Charla LaTeX",
