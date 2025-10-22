@@ -146,14 +146,9 @@ footer {
     margin: 1em;
 }
 
-#socials a {
-    display: inline-block;
-    max-width: 30px;
-    max-height: 30px;
-}
-
-#socials img {
-    width: 100%;
+.socials-icon {
+    width: 32px;
+    height: 32px;
 }
 
 .centered {

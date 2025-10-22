@@ -1,7 +1,15 @@
 // Protect email
-const emailUsername = 'contacto';
-const emailDomain = 'dafic.org';
-const openEmail = () => {
-    document.getElementById('email').href = `mailto:${emailUsername}@${emailDomain}`;
-}
-document.getElementById('email').setAttribute('onclick', 'openEmail();');
+
+// Retrieve email links with class 'email' and set their href attributes
+document.querySelectorAll('a.email').forEach(emailLink => {
+
+    // Join inner spans
+    const spans = emailLink.querySelectorAll('span');
+    email = '';
+    spans.forEach(span => {
+        email += span.innerText;
+    });
+
+    // Set mailto link
+    emailLink.href = `mailto:${email}`;
+});
