@@ -1,18 +1,19 @@
 const NEXT_ACTIVITIES = [
     [
-        "Dungeons & Dragons",
-        "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
-        "22/10/2025 (19:30)",
-        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png",
-        "/actividades/assets/img/poster/cartel_charla_d&d.png"
-    ],
-    [
         "Charla LaTeX",
         "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
         "05/11/2025 (17:30)",
         "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
         "/actividades/assets/img/poster/cartel_latex_novembro_2025.png"
     ],
+    [
+        "I Partida D&D",
+        "Non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D. Fai click e cubre o formulario coa túa dispoñibilidade!",
+        "10-14/11",
+        "/actividades/assets/img/activities/actividad_d&d_novembro_2025.png",
+        "https://forms.office.com/e/AtsYMBQaYi"
+    ],
+
     [
         "Charla Markdown",
         "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
@@ -28,12 +29,19 @@ const NEXT_ACTIVITIES = [
     [
         "Visita ao CITEEC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
-        "2025",
-        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2025.png"
+        "Febreiro 2026",
+        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png"
     ]
 ]
 
 const PREVIOUS_ACTIVITIES = [
+    [
+        "Charla Dungeons & Dragons",
+        "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
+        "22/10/2025 (19:30)",
+        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png",
+        "/actividades/assets/img/poster/cartel_charla_d&d.png"
+    ],
 
     [
         "Concurso de fotografía",
