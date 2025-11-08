@@ -1,24 +1,22 @@
 const NEXT_ACTIVITIES = [
     [
-        "Charla LaTeX",
-        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
-        "05/11/2025 (17:30)",
-        "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
-        "/actividades/assets/img/poster/cartel_latex_novembro_2025.png"
-    ],
-    [
         "I Partida D&D",
-        "Non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D. Fai click e cubre o formulario coa túa dispoñibilidade!",
-        "10-14/11",
+        "Non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D!",
+        "11/11/2025 (19:00)",
         "/actividades/assets/img/activities/actividad_d&d_novembro_2025.png",
-        "https://forms.office.com/e/AtsYMBQaYi"
+        "/actividades/assets/img/poster/cartel_partida_I_d&d.png"
     ],
-
     [
         "Charla Markdown",
         "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
         "2025",
         "/actividades/assets/img/activities/actividad_charla_markdown_2025.png"
+    ],
+    [
+        "Torneo LoL",
+        "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
+        "2025",
+        "/actividades/assets/img/activities/actividad_torneo_lol_2025.png"
     ],
     [
         "Visita ao CITIC",
@@ -35,6 +33,13 @@ const NEXT_ACTIVITIES = [
 ]
 
 const PREVIOUS_ACTIVITIES = [
+    [
+        "Charla LaTeX",
+        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
+        "05/11/2025 (17:30)",
+        "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
+        "https://github.com/dafic-udc/charla-latex-gpul-2025"
+    ],
     [
         "Charla Dungeons & Dragons",
         "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
