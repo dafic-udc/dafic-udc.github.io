@@ -1,10 +1,10 @@
 const NEXT_ACTIVITIES = [
     [
-        "I Partida D&D",
+        "Partidas D&D",
         "Non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D!",
-        "11/11/2025 (19:00)",
+        "18/11/2025 (19:00)",
         "/actividades/assets/img/activities/actividad_d&d_novembro_2025.png",
-        "/actividades/assets/img/poster/cartel_partida_I_d&d.png"
+        "/actividades/assets/img/poster/cartel_partida_II_d&d.png"
     ],
     [
         "Charla Markdown",
@@ -19,16 +19,16 @@ const NEXT_ACTIVITIES = [
         "/actividades/assets/img/activities/actividad_torneo_lol_2025.png"
     ],
     [
-        "Visita ao CITIC",
-        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
-        "2025",
-        "/actividades/assets/img/activities/actividad_visita_ao_citic_2025.png"
-    ],
-    [
         "Visita ao CITEEC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
         "Febreiro 2026",
         "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png"
+    ],
+        [
+        "Visita ao CITIC",
+        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
+        "Febreiro 2026",
+        "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png"
     ]
 ]
 
