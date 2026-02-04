@@ -2,23 +2,29 @@ const NEXT_ACTIVITIES = [
     [
         "Visita ao CITEEC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
-        "Febreiro 2026",
+        "3, 5 Febreiro 2026",
         "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png",
         "https://forms.office.com/e/r6QLBMVEmH"
     ],
     [
         "Visita ao CITIC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
-        "Febreiro 2026",
+        "11, 12 Febreiro 2026",
         "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png",
         "https://forms.office.com/e/KbGhtyzVBr"
     ],
     [
         "Torneo LoL",
         "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
-        "Febreiro 2026",
+        "Febreiro 2026 (en curso)",
         "/actividades/assets/img/activities/actividad_torneo_lol_2026.png"
     ],
+    [
+        "Feira de investigación",
+        "Coñece os grupos de investigación asociados á FIC e as súas liñas de traballo!",
+        "Marzo 2026",
+        "/actividades/assets/img/activities/actividad_feira_investigacion.png"
+    ]
 
     [
         "Charla Markdown",
@@ -47,12 +53,7 @@ const NEXT_ACTIVITIES = [
         "2026",
         "/actividades/assets/img/activities/actividad_kahoot.png"
     ],
-    [
-        "Feira de investigación",
-        "Coñece os grupos de investigación asociados á FIC e as súas liñas de traballo!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_feira_investigacion.png"
-    ]
+
 ]
 
 const PREVIOUS_ACTIVITIES = [
