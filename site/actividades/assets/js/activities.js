@@ -24,8 +24,7 @@ const NEXT_ACTIVITIES = [
         "Coñece os grupos de investigación asociados á FIC e as súas liñas de traballo!",
         "Marzo 2026",
         "/actividades/assets/img/activities/actividad_feira_investigacion.png"
-    ]
-
+    ],
     [
         "Charla Markdown",
         "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
