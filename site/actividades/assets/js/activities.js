@@ -2,9 +2,43 @@ const NEXT_ACTIVITIES = [
     [
         "Torneo LoL",
         "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
-        "Febreiro 2026 (en curso)",
+        "Febreiro e Marzo 2026 (en curso)",
         "/actividades/assets/img/activities/actividad_torneo_lol_2026.png"
     ],
+
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC!",
+        "23 Marzo 2026 (19:30)",
+        "/actividades/assets/img/activities/actividad_egresados_gced_2026.png",
+        "/actividades/assets/img/poster/cartel_egresados_gced_marzo26.png"
+    ], 
+
+    [
+        "Charla Egresados GEI",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC!",
+        "25 Marzo 2026 (19:30)",
+        "/actividades/assets/img/activities/actividad_egresados_gei_2026.png",
+        "/actividades/assets/img/poster/cartel_egresados_gei_marzo26.png"
+    ],
+    
+    [
+        "Kahoot FIC",
+        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Kahoot cheo de retos e risas, demostra quen manda no ranking!",
+        "Abril 2026",
+        "/actividades/assets/img/activities/actividad_kahoot.png"
+    ],
+
+    [
+        "Charla Markdown",
+        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
+        "2026",
+        "/actividades/assets/img/activities/actividad_charla_markdown_2026.png"
+    ],
+
+]
+
+const PREVIOUS_ACTIVITIES = [
 
     [
         "Feira de investigación",
@@ -13,38 +47,7 @@ const NEXT_ACTIVITIES = [
         "/actividades/assets/img/activities/actividad_feira_investigacion.png",
         "/actividades/assets/img/poster/cartel_feira_investigacion.png"
     ],
-    
-    [
-        "Charla Markdown",
-        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
-        "2026",
-        "/actividades/assets/img/activities/actividad_charla_markdown_2026.png"
-    ],
 
-    [
-        "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_egresados_gced_2026.png",
-    ],
-
-    [
-        "Charla Egresados GEI",
-        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_egresados_gei_2026.png",
-    ],
-    
-    [
-        "Kahoot FIC",
-        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Kahoot cheo de retos e risas, demostra quen manda no ranking!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_kahoot.png"
-    ],
-
-]
-
-const PREVIOUS_ACTIVITIES = [
     [
         "Visita ao CITIC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
