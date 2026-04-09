@@ -1,5 +1,38 @@
 const NEXT_ACTIVITIES = [
     [
+        "Torneo Mario Kart",
+        "Fai novas amizades e ponas en risco neste torneo de Mario Kart 8. Ven a demostrar que non só te alzas coa victoria por sorte (ou si...)",
+        "2026",
+        "/actividades/assets/img/activities/actividad_mario_kart_2026.png"
+
+    ],
+
+    [
+        "Xornadas Musicais",
+        "Sentes curiosidade pola música? Tocas nalgún grupo ou banda? Faremos concertos, jams e talleres nos que calquera pode aprender sen importar o seu nivel!",
+        "2026",
+        "/actividades/assets/img/activities/actividad_xornadas_musicais_2026.png",
+    ],
+    
+    [
+        "Kahoot FIC",
+        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Kahoot cheo de retos e risas, demostra quen manda no ranking!",
+        "2026",
+        "/actividades/assets/img/activities/actividad_kahoot.png"
+    ],
+
+    [
+        "Charla Markdown",
+        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
+        "2026",
+        "/actividades/assets/img/activities/actividad_charla_markdown_2026.png"
+    ],
+
+]
+
+const PREVIOUS_ACTIVITIES = [
+
+    [
         "Torneo LoL",
         "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
         "Febreiro e Marzo 2026 (en curso)",
@@ -21,24 +54,6 @@ const NEXT_ACTIVITIES = [
         "/actividades/assets/img/activities/actividad_egresados_gei_2026.png",
         "/actividades/assets/img/poster/cartel_egresados_gei_marzo26.png"
     ],
-    
-    [
-        "Kahoot FIC",
-        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Kahoot cheo de retos e risas, demostra quen manda no ranking!",
-        "Abril 2026",
-        "/actividades/assets/img/activities/actividad_kahoot.png"
-    ],
-
-    [
-        "Charla Markdown",
-        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
-        "2026",
-        "/actividades/assets/img/activities/actividad_charla_markdown_2026.png"
-    ],
-
-]
-
-const PREVIOUS_ACTIVITIES = [
 
     [
         "Feira de investigación",
