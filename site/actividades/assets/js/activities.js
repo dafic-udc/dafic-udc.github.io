@@ -35,7 +35,7 @@ const PREVIOUS_ACTIVITIES = [
     [
         "Torneo LoL",
         "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
-        "Febreiro e Marzo 2026 (en curso)",
+        "Febreiro e Marzo 2026",
         "/actividades/assets/img/activities/actividad_torneo_lol_2026.png"
     ],
 
