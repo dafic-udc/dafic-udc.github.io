@@ -77,6 +77,14 @@ main {
     text-align: justify;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
@@ -110,9 +118,19 @@ p {
     margin: 1em 0;
 }
 
+section#welcome {
+    background-color: var(--color-dafic);
+    color: white;
+}
+
 #welcome-text {
     max-width: 70ch;
     text-align: center;
+}
+
+section#activities {
+    background-color: #343434;
+    color: white
 }
 
 /* FOOTER */
