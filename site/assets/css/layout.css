@@ -73,10 +73,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
-    padding: 5px 30px;
-    margin: auto;
-
+    width: 100%;
     text-align: justify;
 }
 
@@ -113,6 +110,10 @@ p {
     margin: 1em 0;
 }
 
+#welcome-text {
+    max-width: 70ch;
+    text-align: center;
+}
 
 /* FOOTER */
 
@@ -185,10 +186,6 @@ footer {
 }
 
 @media screen and (max-width: 680px) {
-
-    main {
-        width: 100%;
-    }
 
     #footer-links {
         flex-direction: column;
