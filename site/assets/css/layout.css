@@ -1,6 +1,7 @@
 :root {
     --color0: #101010;
     --color-dafic: #326e76;
+    --color-last-section: #343434;
 }
 
 * {
@@ -17,11 +18,10 @@ body {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    height: 100%;
     padding: 0;
     margin: 0;
 
-    background: var(--color-dafic);
+    background: var(--color-last-section);
 
     color: white;
     font-family: "Ubuntu Mono", monospace;
@@ -70,8 +70,6 @@ header {
 
 main {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
     width: 100%;
     text-align: justify;
@@ -188,6 +186,7 @@ footer {
     width: 100%;
     padding: 1em 0;
     border-top: 1px solid white;
+    margin-top: auto;
     background-color: var(--color0);
 }
 
