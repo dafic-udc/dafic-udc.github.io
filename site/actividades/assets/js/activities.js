@@ -67,16 +67,14 @@ const PREVIOUS_ACTIVITIES = [
         "Visita ao CITIC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
         "11, 12 Febreiro 2026",
-        "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png",
-        "https://forms.office.com/e/KbGhtyzVBr"
+        "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png"
     ],
 
     [
         "Visita ao CITEEC",
         "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
         "3, 5 Febreiro 2026",
-        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png",
-        "https://forms.office.com/e/r6QLBMVEmH"
+        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png"
     ],
 
     [
