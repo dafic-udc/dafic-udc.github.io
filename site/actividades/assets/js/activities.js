@@ -1,5 +1,14 @@
 const NEXT_ACTIVITIES = [
     [
+        "Torneo SuperTuxKart",
+        "Demostra que es o mellor piloto de SuperTuxKart e álzate coa victoria neste torneo! Non importa se es un experto ou un novato, o importante é divertirse!",
+        "13 Maio 2026",
+        "/actividades/assets/img/activities/actividad_supertux_2026.png",
+        "https://forms.cloud.microsoft/e/8ShaKxU5k1"
+
+    ],
+
+    [
         "Torneo Mario Kart",
         "Fai novas amizades e ponas en risco neste torneo de Mario Kart 8. Ven a demostrar que non só te alzas coa victoria por sorte (ou si...)",
         "2026",
