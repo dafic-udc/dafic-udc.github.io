@@ -12,6 +12,7 @@ const NEXT_ACTIVITIES = [
         "Sentes curiosidade pola música? Tocas nalgún grupo ou banda? Faremos concertos, jams e talleres nos que calquera pode aprender sen importar o seu nivel!",
         "2026",
         "/actividades/assets/img/activities/actividad_xornadas_musicais_2026.png",
+        "/actividades/assets/img/poster/cartel_xornadas_anuncio.jpg"
     ],
     
     [
