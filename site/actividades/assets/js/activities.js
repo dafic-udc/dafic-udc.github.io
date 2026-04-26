@@ -1,196 +1,5 @@
-const NEXT_ACTIVITIES = [
-    [
-        "Torneo SuperTuxKart",
-        "Demostra que es o mellor piloto de SuperTuxKart e álzate coa victoria neste torneo! Non importa se es un experto ou un novato, o importante é divertirse!",
-        "13 Maio 2026",
-        "/actividades/assets/img/activities/actividad_supertux_2026.png",
-        "https://forms.cloud.microsoft/e/8ShaKxU5k1"
-
-    ],
-
-    [
-        "Torneo Mario Kart",
-        "Fai novas amizades e ponas en risco neste torneo de Mario Kart 8. Ven a demostrar que non só te alzas coa victoria por sorte (ou si...)",
-        "2026",
-        "/actividades/assets/img/activities/actividad_mario_kart_2026.png"
-
-    ],
-
-    [
-        "Xornadas Musicais",
-        "Sentes curiosidade pola música? Tocas nalgún grupo ou banda? Faremos concertos, jams e talleres nos que calquera pode aprender sen importar o seu nivel!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_xornadas_musicais_2026.png",
-        "/actividades/assets/img/poster/cartel_xornadas_anuncio.jpg"
-    ],
-    
-    [
-        "Kahoot FIC",
-        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Kahoot cheo de retos e risas, demostra quen manda no ranking!",
-        "2026",
-        "/actividades/assets/img/activities/actividad_kahoot.png"
-    ],
-
-    [
-        "Charla Markdown",
-        "Próximamente un dos socios de DAFIC impartirá unha charla sobre Markdown da man do GPUL",
-        "2026",
-        "/actividades/assets/img/activities/actividad_charla_markdown_2026.png"
-    ],
-
-]
-
-const PREVIOUS_ACTIVITIES = [
-
-    [
-        "Torneo LoL",
-        "Saca o teu lado gamer e álzate coa victoria no noso torneo de LoL!",
-        "Febreiro e Marzo 2026",
-        "/actividades/assets/img/activities/actividad_torneo_lol_2026.png"
-    ],
-
-    [
-        "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC!",
-        "23 Marzo 2026 (19:30)",
-        "/actividades/assets/img/activities/actividad_egresados_gced_2026.png",
-        "/actividades/assets/img/poster/cartel_egresados_gced_marzo26.png"
-    ], 
-
-    [
-        "Charla Egresados GEI",
-        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC!",
-        "25 Marzo 2026 (19:30)",
-        "/actividades/assets/img/activities/actividad_egresados_gei_2026.png",
-        "/actividades/assets/img/poster/cartel_egresados_gei_marzo26.png"
-    ],
-
-    [
-        "Feira de investigación",
-        "Coñece os grupos de investigación asociados á FIC e as súas liñas de traballo!",
-        "3, 4, 5 Marzo 2026",
-        "/actividades/assets/img/activities/actividad_feira_investigacion.png",
-        "/actividades/assets/img/poster/cartel_feira_investigacion.png"
-    ],
-
-    [
-        "Visita ao CITIC",
-        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
-        "11, 12 Febreiro 2026",
-        "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png"
-    ],
-
-    [
-        "Visita ao CITEEC",
-        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda! Inscríbete xa!",
-        "3, 5 Febreiro 2026",
-        "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png"
-    ],
-
-    [
-        "Partidas D&D",
-        "Non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D!",
-        "Novembro 2025",
-        "/actividades/assets/img/activities/actividad_d&d_novembro_2025.png",
-    ],
-
-    [
-        "Charla LaTeX",
-        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
-        "05/11/2025 (17:30)",
-        "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
-        "https://github.com/dafic-udc/charla-latex-gpul-2025"
-    ],
-
-    [
-        "Charla Dungeons & Dragons",
-        "Tanto se eres experto como un completo novato, non te perdas esta oportunidade de pasar unha boa tarde xogando a D&D",
-        "22/10/2025 (19:30)",
-        "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png",
-        "/actividades/assets/img/poster/cartel_charla_d&d.png"
-    ],
-
-    [
-        "Concurso de fotografía",
-        "Participa no noso concurso de fotografía e saca o teu lado máis creativo! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "08/09/2025 - 25/09/2025",
-        "/actividades/assets/img/activities/actividad_fotofic.png",
-        "https://www.instagram.com/p/DPFMKQCCKMU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    ],
-
-    [
-        "Charla Egresados GCED",
-        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "24/09/2025",
-        "/actividades/assets/img/activities/actividad_egresados_gced.png",
-        "/actividades/assets/img/poster/cartel_egresados_gced.png"
-    ],
-
-    [
-        "Charla Egresados GEI",
-        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC. Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "23/09/2025",
-        "/actividades/assets/img/activities/actividad_egresados_gei.png",
-        "/actividades/assets/img/poster/cartel_egresados_gei.png"
-    ],
-
-    [
-        "Xornadas de Benvida da UDC",
-        "Acércate ao noso stand no estadio de Elviña o día 18 de setembro para coñecer DAFIC e todo o que facemos! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "18/09/2025",
-        "/actividades/assets/img/activities/actividad_benvida_udc.png"
-    ],
-
-    [
-        "Torneo DAFIC e-Sports",
-        "Participa no torneo de Super Smash Bros Ultimate para Switch e álzate coa victoria! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "17/09/2025",
-        "/actividades/assets/img/activities/actividad_e_sports.png",
-        "/actividades/assets/img/poster/cartel_streetpass.png"
-    ],
-
-    [
-        "Quedada de Streetpass",
-        "Desempolva a túa 3DS/2DS para conectar con amigos en Streetpass mentras desfrutas do torneo de SSBU e boa compañía! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "17/09/2025",
-        "/actividades/assets/img/activities/actividad_streetpass.png",
-        "/actividades/assets/img/poster/cartel_streetpass.png"
-    ],
-
-    [
-        "Batallas matemáticas",
-        "Gústache desafiar a túa mente? Participa nas nosas batallas matemáticas e demostra o teu talento! Esta actividade conta co apoio das axudas do VEE da UDC.",
-        "15/09/2025",
-        "/actividades/assets/img/activities/actividad_batallas_matematicas.png",
-        "/actividades/assets/img/poster/cartel_batallas_matematicas.png"
-    ],
-
-    [
-        "Visita ao CITIC",
-        "Que se fai nun centro de investigación? Non todo é o mundo da empresa, descubre nesta visita a outra cara da moeda!",
-        "05/05/2025 - 07/05/2025",
-        "/actividades/assets/img/activities/actividad_visita_ao_citic_maio_2025.png"
-    ],
-
-    [
-        "Charla LaTeX",
-        "GPUL e DAFIC unen forzas para ensinarte LaTeX, iso que necesitas para o TFG que aínda non sabes!",
-        "25/03/2025",
-        "/actividades/assets/img/activities/actividad_charla_latex_marzo_2025.png",
-        "https://github.com/dafic-udc/charla-latex-gpul-2025"
-    ],
-
-    [
-        "Charla Repres FIC",
-        "Que fai un representante de estudantes? Por que é importante a representación estudantil? Descubre isto e máis nesta charla!",
-        "20/02/2025",
-        "/actividades/assets/img/activities/actividad_charla_repres_fic.png",
-        "/actividades/assets/img/poster/cartel_repres_fic.png"
-    ],
-]
-
-const NEXT_ACTIVITIES_CONTAINER_ID = 'next-activities-list';
-const PREVIOUS_ACTIVITIES_CONTAINER_ID = 'previous-activities-list';
+const NEXT_ACTIVITIES_DATA_URL = '/actividades/data/next-activities.json';
+const PREVIOUS_ACTIVITIES_DATA_URL = '/actividades/data/previous-activities.json';
 
 const showActivities = (activities, activitiesContainerID) => {
 
@@ -251,17 +60,25 @@ const showActivities = (activities, activitiesContainerID) => {
     activitiesContainer.appendChild(activitiesList);
 };
 
-const showNextActivities = (activitiesContainerID) => {
+const fetchActivities = async (dataUrl) => {
 
-    if (activitiesContainerID === undefined) {
-        activitiesContainerID = NEXT_ACTIVITIES_CONTAINER_ID;
+    const response = await fetch(dataUrl);
+    if (response.ok) {
+        return await response.json();
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
     }
+};
+
+const showNextActivities = async (containerID = 'next-activities-list') => {
+
+    const ACTIVITIES = await fetchActivities(NEXT_ACTIVITIES_DATA_URL);
 
     // Retrieve <div> container:
-    const activitiesContainer = document.getElementById(activitiesContainerID);
+    const activitiesContainer = document.getElementById(containerID);
     if (!activitiesContainer) return;
 
-    if (NEXT_ACTIVITIES.length === 0) {
+    if (ACTIVITIES.length === 0) {
 
         // If no activities, show a message and a link to propose an activity:
         const noActivitiesMessage = document.createElement('p');
@@ -270,16 +87,11 @@ const showNextActivities = (activitiesContainerID) => {
         noActivitiesMessage.appendChild(document.createElement('br'));
         activitiesContainer.appendChild(noActivitiesMessage);
     } else {
-        showActivities(NEXT_ACTIVITIES, activitiesContainerID);
+        showActivities(ACTIVITIES, containerID);
     }
 };
 
-const showPreviousActivities = (activitiesContainerID) => {
-
-    // Default to PREVIOUS_ACTIVITIES_CONTAINER_ID if no ID is provided
-    if (activitiesContainerID === undefined) {
-        activitiesContainerID = PREVIOUS_ACTIVITIES_CONTAINER_ID;
-    }
-
-    showActivities(PREVIOUS_ACTIVITIES, activitiesContainerID);
+const showPreviousActivities = async (containerID = 'previous-activities-list') => {
+    const ACTIVITIES = await fetchActivities(PREVIOUS_ACTIVITIES_DATA_URL);
+    showActivities(ACTIVITIES, containerID);
 };
