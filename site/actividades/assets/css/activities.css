@@ -48,11 +48,20 @@
     font-size: 16px;
     font-weight: bold;
     color: var(--color-dafic);
+
+    border-bottom: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .activity-description {
     width: 100%;
     min-height: 7em;
+    max-height: 7em;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 5px;
     margin: 0;
     font-size: 12px;

@@ -39,15 +39,15 @@ const showActivities = (activities, activitiesContainerID) => {
             activityLink.className = 'activity-link';
             activityLink.href = activity[4];
 
-            activityLink.appendChild(activityIcon);
             activityLink.appendChild(activityName);
+            activityLink.appendChild(activityIcon);
 
             activityItem.appendChild(activityLink);
             activityItem.appendChild(activityDesc);
             activityItem.appendChild(activityDate);
         } else {
-            activityItem.appendChild(activityIcon);
             activityItem.appendChild(activityName);
+            activityItem.appendChild(activityIcon);
             activityItem.appendChild(activityDesc);
             activityItem.appendChild(activityDate);
         }
