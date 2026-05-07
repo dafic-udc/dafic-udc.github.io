@@ -16,6 +16,9 @@ const showActivities = (activities, activitiesContainerID) => {
 
         const activityItem = document.createElement('li');
 
+        const activityIconContainer = document.createElement('div');
+        activityIconContainer.className = 'activity-icon-container';
+
         const activityIcon = document.createElement('img');
         activityIcon.className = 'activity-icon';
         activityIcon.src = activity[3];
@@ -40,14 +43,16 @@ const showActivities = (activities, activitiesContainerID) => {
             activityLink.href = activity[4];
 
             activityLink.appendChild(activityName);
-            activityLink.appendChild(activityIcon);
+            activityIconContainer.appendChild(activityIcon);
+            activityLink.appendChild(activityIconContainer);
 
             activityItem.appendChild(activityLink);
             activityItem.appendChild(activityDesc);
             activityItem.appendChild(activityDate);
         } else {
             activityItem.appendChild(activityName);
-            activityItem.appendChild(activityIcon);
+            activityIconContainer.appendChild(activityIcon);
+            activityItem.appendChild(activityIconContainer);
             activityItem.appendChild(activityDesc);
             activityItem.appendChild(activityDate);
         }
