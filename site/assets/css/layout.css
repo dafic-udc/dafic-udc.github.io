@@ -1,7 +1,7 @@
 :root {
     --color0: #101010;
     --color-dafic: #326e76;
-    --color-last-section: #505050;
+    --color-last-section: #232323;
 }
 
 * {
@@ -83,6 +83,11 @@ section {
     padding: 30px;
 }
 
+article {
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
 h1,
 h2,
 h3,
@@ -125,109 +130,6 @@ p {
 figcaption {
     text-align: center;
 }
-
-section#welcome {
-    background-color: var(--color-dafic);
-    color: white;
-
-    #welcome-text {
-        max-width: 70ch;
-        text-align: center;
-    }
-
-}
-
-
-section#activities {
-    background-color: #343434;
-    color: white;
-
-    #next-activities-list {
-        margin: 0.5em auto;
-    }
-
-    #activities-box {
-        max-width: 70ch;
-        padding: 0.5ch 2ch;
-        border: 2px solid white;
-        border-radius: 10px;
-        margin-top: 30px;
-        text-align: justify;
-        background-color: #2c2c2c;
-    }
-
-    #activities-box-links {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1ch;
-        width: 100%;
-        margin: 1ch;
-    }
-
-    #activities-box-links a {
-        width: fit-content;
-        padding: 0.5ch;
-        border: 2px solid black;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        text-decoration: none;
-        background-color: white;
-        color: black;
-
-        transition: 0.3s;
-    }
-
-    #activities-box-links a:hover,
-    #activities-box-links a:active {
-        background-color: var(--color-dafic);
-        color: white;
-    }
-}
-
-section#merch {
-    background-color: #505050;
-    color: white;
-
-    .merch-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        max-width: 70ch;
-        padding: 1em;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color: #404040;
-
-        span {
-            font-size: 1.2em;
-            text-decoration: underline;
-        }
-
-        p {
-            display: block;
-            text-align: center;
-            max-width: 70ch;
-        }
-
-        figure {
-
-            img {
-                width: 360px;
-                max-width: 100%;
-                border: 2px solid white;
-            }
-
-            figcaption {
-                font-size: 0.8em;
-            }
-        }
-    }
-}
-
-
 
 /* FOOTER */
 
@@ -290,6 +192,20 @@ footer {
 .socials-icon {
     width: 32px;
     height: 32px;
+}
+
+.web-badge-link {
+    display: inline-block;
+    box-sizing: content-box;
+    text-decoration: none;
+    width: 88px;
+    height: 31px;
+    border: 1px solid black;
+}
+
+.web-badge {
+    width: 88px;
+    height: 31px;
 }
 
 .centered {

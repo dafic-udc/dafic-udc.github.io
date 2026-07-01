@@ -1,0 +1,48 @@
+{
+    "xd": {
+        "presidencia": {
+            "cargo": "Presidente",
+            "nome": "Daniel Feito Pin",
+            "icono": "https://danielfeitopin.es/static/img/web_badge.png",
+            "link": "https://www.linkedin.com/in/danielfeitopin/"
+        },
+        "vicepresidencia": {
+            "cargo": "Vicepresidente",
+            "nome": "Xián Vázquez Luna",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/xi%C3%A1n-v%C3%A1zquez-luna-b7645729b/"
+        },
+        "secretaría": {
+            "cargo": "Secretario",
+            "nome": "Pablo Rodríguez Pérez",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/pablo-r-p-334403273/"
+        },
+        "tesouraría": {
+            "cargo": "Tesoureiro",
+            "nome": "Carlos Torres Paz",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/8ctorres/"
+        },
+        "vogalía": {
+            "cargo": "Vogal",
+            "nome": "Lúa Rico Rodríguez",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/lua-rico/"
+        }
+    },
+    "coms": {
+        "actividades": {
+            "cargo": "Actividades",
+            "nome": "Lúa Rico Rodríguez",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/lua-rico/"
+        },
+        "comunicación": {
+            "cargo": "Comunicación e Prensa",
+            "nome": "Mario Ozón Casais",
+            "icono": "",
+            "link": "https://www.linkedin.com/in/mario-oz%C3%B3n-casais-42241b273/"
+        }
+    }
+}

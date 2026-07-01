@@ -14,6 +14,7 @@
 	<title>DAFIC - Welcome to DAFIC</title>
 	<link rel="icon" type="image/png" href="/assets/img/Logo_DAFIC_redondo.svg">
 	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/home.css">
 	<link rel="stylesheet" type="text/css" href="/actividades/assets/css/activities.css">
 </head>
 
@@ -59,17 +60,41 @@
 			</div>
 		</section>
 
+		<section id="organizacion">
+			<h2>Organización</h2>
+			<article id="xunta-directiva">
+				<h3>Xunta Directiva</h3>
+				<div id="organizacion-xd" class="memberlist">
+					<!-- Updated by organizacion.js -->
+				</div>
+			</article>
+
+			<article id="comisions">
+				<h3>Comisións</h3>
+				<div id="organizacion-comisions" class="memberlist">
+					<!-- Updated by organizacion.js -->
+				</div>
+			</article>
+
+			<script src="/assets/js/organizacion.js"></script>
+			<script>
+				showXD();
+				showComs();
+			</script>
+		</section>
+
 		<section id="merch">
 			<h2>Merchandising</h2>
-			
+
 			<div class="merch-container">
 
 				<span>Chapas</span>
-				
+
 				<p>
-					Consigue a túa chapa por só 1€. Con esta aportación axúdasnos a mellorar as actividades que organizamos!
+					Consigue a túa chapa por só 1€. Con esta aportación axúdasnos a mellorar as actividades que
+					organizamos!
 				</p>
-				
+
 				<figure>
 					<img src="/assets/img/pics/Merch-chapas.png">
 					<figcaption>Chapa "UN 5 SON 6 CRÉDITOS".</figcaption>
@@ -79,6 +104,9 @@
 	</main>
 
 	<footer>
+		<a class="web-badge-link" title="DAFIC" href="/">
+			<img class="web-badge" alt="DAFIC" src="/assets/img/web_badge.png">
+		</a>
 		<ul id="footer-links">
 			<li>
 				<a class="email" href="#" data-e="Y29udGFjdG9AZGFmaWMub3JnCg==">
@@ -106,7 +134,8 @@
 					alt="Instagram">
 			</a>
 			<a href="https://www.linkedin.com/company/dafic/">
-				<img class="socials-icon" title="LinkedIn" src="/assets/img/vendor/tabler/brand-linkedin.svg" alt="LinkedIn">
+				<img class="socials-icon" title="LinkedIn" src="/assets/img/vendor/tabler/brand-linkedin.svg"
+					alt="LinkedIn">
 			</a>
 			<a href="https://dafic.org/links">
 				<img class="socials-icon" title="Links" src="/assets/img/vendor/tabler/link.svg" alt="Links">
