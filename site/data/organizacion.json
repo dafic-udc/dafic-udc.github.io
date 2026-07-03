@@ -27,7 +27,7 @@
         "vogalía": {
             "cargo": "Vogal",
             "nome": "Lúa Rico Rodríguez",
-            "icono": "",
+            "icono": "/assets/img/web_badges/lrr.png",
             "link": "https://www.linkedin.com/in/lua-rico/"
         }
     },
@@ -35,7 +35,7 @@
         "actividades": {
             "cargo": "Actividades",
             "nome": "Lúa Rico Rodríguez",
-            "icono": "",
+            "icono": "/assets/img/web_badges/lrr.png",
             "link": "https://www.linkedin.com/in/lua-rico/"
         },
         "comunicación": {
