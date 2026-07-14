@@ -15,7 +15,7 @@
         "secretaría": {
             "cargo": "Secretario",
             "nome": "Pablo Rodríguez Pérez",
-            "icono": "",
+            "icono": "/assets/img/web_badges/prp.png",
             "link": "https://www.linkedin.com/in/pablo-r-p-334403273/"
         },
         "tesouraría": {
