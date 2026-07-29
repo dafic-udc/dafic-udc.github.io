@@ -73,6 +73,9 @@ section#activities {
     }
 
     #activities-box-links a {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
         width: fit-content;
         padding: 0.5ch;
         border: 2px solid black;
@@ -82,13 +85,28 @@ section#activities {
         background-color: white;
         color: black;
 
-        transition: transform 0.3s ease background;
+        transition: color 0.3s ease;
+    }
+
+    #activities-box-links a::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-color: var(--color-dafic);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
     }
 
     #activities-box-links a:hover,
     #activities-box-links a:active {
-        background-color: var(--color-dafic);
         color: white;
+    }
+
+    #activities-box-links a:hover::before,
+    #activities-box-links a:active::before {
+        transform: scaleX(1);
     }
 }
 
