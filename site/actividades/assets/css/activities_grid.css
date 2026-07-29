@@ -1,0 +1,31 @@
+#previous-activities-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.activity-tile-wrapper {
+    padding: 7px;
+    background-color: white;
+}
+
+.activity-tile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 13em;
+    height: 13em;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--color-dafic);
+    color: white;
+    text-align: center;
+}
+
+.activity-tile img {
+    max-width: 80%;
+    max-height: 80%;
+}
