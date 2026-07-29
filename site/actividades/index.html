@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="/assets/img/Logo_DAFIC_redondo.svg">
 	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="/actividades/assets/css/activities.css">
+	<link rel="stylesheet" type="text/css" href="/actividades/assets/css/activities_grid.css">
 </head>
 
 <body>
@@ -18,33 +19,37 @@
 		</a>
 	</header>
 	<main>
-
-		<section id="activities">
-			<h1>Actividades</h1>
-
+		<h1>Actividades</h1>
+		<section id="next-activities">
 			<h2>Próximas actividades</h2>
 			<div id="next-activities-list">
 				<!-- Updated by activities.js -->
 			</div>
+		</section>
 
+		<section id="previous-activities">
 			<h2>Actividades realizadas</h2>
 			<div id="previous-activities-list">
 				<!-- Updated by activities.js -->
 			</div>
-
-			<script src="./assets/js/activities.js"></script>
-			<script>
-				showNextActivities();
-				showPreviousActivities();
-			</script>
 		</section>
+
+		<script src="./assets/js/activities.js"></script>
+		<script src="./assets/js/activities_grid.js"></script>
+		<script>
+			showNextActivities();
+			// showPreviousActivities();
+			showActivitiesGrid("previous-activities-list");
+		</script>
 	</main>
 
 	<footer>
-		<a class="web-badge-link" title="DAFIC" href="/">
-			<img class="web-badge" alt="DAFIC" src="/assets/img/web_badge.png">
-		</a>
 		<ul id="footer-links">
+			<li>
+				<a class="web-badge-link" title="DAFIC" href="/">
+					<img class="web-badge" alt="DAFIC" src="/assets/img/web_badge.png">
+				</a>
+			</li>
 			<li>
 				<a class="email" href="#" data-e="Y29udGFjdG9AZGFmaWMub3JnCg==">
 					<span>contacto</span><!----><span>&#64;</span><!----><span>dafic.org</span>

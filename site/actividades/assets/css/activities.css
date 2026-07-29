@@ -1,5 +1,10 @@
 /* ACTIVITIES */
 
+#previous-activities {
+    color: var(--color-dafic);
+    background-color: white;
+}
+
 .activities-list {
     display: flex;
     flex-flow: row wrap;

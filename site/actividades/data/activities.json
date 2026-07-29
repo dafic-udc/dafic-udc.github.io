@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Torneo de SuperTuxKart",
+        "date": "13/05/2026",
+        "image": "/actividades/assets/img/activities/supertux.svg",
+        "link": ""
+    },
+    {
+        "name": "Torneo de Mario Kart 8 Deluxe",
+        "date": "11/05/2026",
+        "image": "/actividades/assets/img/activities/mario_kart.svg",
+        "link": ""
+    },
+    {
+        "name": "Charla de Markdown",
+        "date": "07/05/2026",
+        "image": "/actividades/assets/img/activities/actividad_charla_markdown_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Torneo LoL",
+        "date": "XX/02/2026",
+        "image": "/actividades/assets/img/activities/actividad_torneo_lol_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Charla Egresados GCED",
+        "date": "23/03/2026",
+        "image": "/actividades/assets/img/activities/actividad_egresados_gced_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Charla Egresados GEI",
+        "date": "25/03/2026",
+        "image": "/actividades/assets/img/activities/actividad_egresados_gei_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Feira de investigación",
+        "date": "03-05/03/2026",
+        "image": "/actividades/assets/img/activities/actividad_feira_investigacion.png",
+        "link": ""
+    },
+    {
+        "name": "Visita ao CITIC",
+        "date": "11-12/02/2026",
+        "image": "/actividades/assets/img/activities/actividad_visita_ao_citic_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Visita ao CITEEC",
+        "date": "03,05/02/2026",
+        "image": "/actividades/assets/img/activities/actividad_visita_ao_citeec_2026.png",
+        "link": ""
+    },
+    {
+        "name": "Partidas D&D",
+        "date": "XX/11/2025",
+        "image": "/actividades/assets/img/activities/actividad_d&d_novembro_2025.png",
+        "link": ""
+    },
+    {
+        "name": "Charla LaTeX",
+        "date": "05/11/2025",
+        "image": "/actividades/assets/img/activities/actividad_charla_latex_novembro_2025.png",
+        "link": ""
+    },
+    {
+        "name": "Charla Dungeons & Dragons",
+        "date": "22/10/2025",
+        "image": "/actividades/assets/img/activities/actividad_d&d_outubro_2025.png",
+        "link": ""
+    },
+    {
+        "name": "Concurso de fotografía",
+        "date": "08/09/2025 - 25/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_fotofic.png",
+        "link": "https://www.instagram.com/p/DPFMKQCCKMU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+        "name": "Charla Egresados GCED",
+        "date": "24/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_egresados_gced.png",
+        "link": ""
+    },
+    {
+        "name": "Charla Egresados GEI",
+        "date": "23/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_egresados_gei.png",
+        "link": ""
+    },
+    {
+        "name": "Xornadas de Benvida da UDC",
+        "date": "18/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_benvida_udc.png",
+        "link": ""
+    },
+    {
+        "name": "Torneo DAFIC e-Sports",
+        "date": "17/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_e_sports.png",
+        "link": ""
+    },
+    {
+        "name": "Quedada de Streetpass",
+        "date": "17/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_streetpass.png",
+        "link": ""
+    },
+    {
+        "name": "Batallas matemáticas",
+        "date": "15/09/2025",
+        "image": "/actividades/assets/img/activities/actividad_batallas_matematicas.png",
+        "link": ""
+    },
+    {
+        "name": "Visita ao CITIC",
+        "date": "05-07/05/2025",
+        "image": "/actividades/assets/img/activities/actividad_visita_ao_citic_maio_2025.png",
+        "link": ""
+    },
+    {
+        "name": "Charla LaTeX",
+        "date": "25/03/2025",
+        "image": "/actividades/assets/img/activities/actividad_visita_ao_citic_maio_2025.png",
+        "link": ""
+    },
+    {
+        "name": "Charla Repres FIC",
+        "date": "20/02/2025",
+        "image": "/actividades/assets/img/activities/actividad_charla_repres_fic.png",
+        "link": ""
+    }
+]
