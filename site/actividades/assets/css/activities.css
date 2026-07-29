@@ -80,7 +80,7 @@
     overscroll-behavior: contain;
     scroll-behavior: smooth;
     padding: 8px 10px;
-    margin: 0 0 10px 0;
+    margin: 3px 0;
     box-sizing: border-box;
     font-size: 12px;
     line-height: 1.3;
