@@ -45,8 +45,8 @@
     align-items: center;
     width: 240px;
     height: 160px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
     background-color: #ffffe8;
 }
 
@@ -104,7 +104,7 @@
 
 .activity-date {
     width: 100%;
-    border-top: 5px solid black;
+    border-top: 4px solid black;
     padding: 0.5em;
     margin: 0;
     font-size: 14px;
