@@ -82,7 +82,7 @@ section#activities {
         background-color: white;
         color: black;
 
-        transition: 0.3s;
+        transition: transform 0.3s ease background;
     }
 
     #activities-box-links a:hover,
