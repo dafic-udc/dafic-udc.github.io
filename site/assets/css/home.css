@@ -48,6 +48,9 @@ section#welcome {
             max-width: 70ch;
         }
 
+        #course {
+            white-space: nowrap;
+        }
     }
 }
 
