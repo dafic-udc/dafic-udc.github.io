@@ -48,10 +48,10 @@ section#welcome {
         @media (min-width: 970px) {
             max-width: 70ch;
         }
+    }
 
-        #course {
-            white-space: nowrap;
-        }
+    #course {
+        white-space: nowrap;
     }
 }
 
