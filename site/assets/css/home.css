@@ -44,6 +44,7 @@ section#welcome {
         @media (min-width: 570px) {
             max-width: 80%;
         }
+
         @media (min-width: 970px) {
             max-width: 70ch;
         }
