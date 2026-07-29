@@ -27,9 +27,12 @@ const showActivities = (activities, activitiesContainerID) => {
         activityName.className = 'activity-name';
         activityName.innerText = activity[0];
 
-        const activityDesc = document.createElement('p');
+        const activityDesc = document.createElement('div');
         activityDesc.className = 'activity-description';
-        activityDesc.innerText = activity[1];
+
+        const activityDescText = document.createElement('p');
+        activityDescText.innerText = activity[1];
+        activityDesc.appendChild(activityDescText);
 
         const activityDate = document.createElement('span');
         activityDate.className = 'activity-date';
