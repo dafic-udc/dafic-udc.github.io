@@ -77,11 +77,28 @@
     max-height: 7em;
     overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
     padding: 5px;
     margin: 0;
     font-size: 12px;
     text-align: left;
     color: black;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.35) transparent;
+}
+
+.activity-description::-webkit-scrollbar {
+    width: 6px;
+}
+
+.activity-description::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.activity-description::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
 }
 
 .activity-date {
