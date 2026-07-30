@@ -198,6 +198,22 @@ footer {
     height: 32px;
 }
 
+#socials a:last-child {
+    animation: socials-icon-flash 1s ease-out 1.5s 1;
+}
+
+@keyframes socials-icon-flash {
+    0% {
+        background-color: transparent;
+    }
+    30% {
+        background-color: orange;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
 .web-badge-link {
     display: inline-block;
     box-sizing: content-box;
