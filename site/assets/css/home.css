@@ -37,10 +37,22 @@ section#welcome {
     color: white;
 
     #welcome-text {
-        max-width: 70ch;
+
         text-align: center;
+        max-width: 100%;
+
+        @media (min-width: 570px) {
+            max-width: 80%;
+        }
+
+        @media (min-width: 970px) {
+            max-width: 70ch;
+        }
     }
 
+    #course {
+        white-space: nowrap;
+    }
 }
 
 
