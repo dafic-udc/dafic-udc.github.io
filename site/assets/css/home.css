@@ -91,7 +91,7 @@ section#activities {
         border-radius: 5px;
         font-size: 0.9rem;
         text-decoration: none;
-        background-color: white;
+        background-color: whitesmoke;
         color: black;
 
         transition: background-color 0.3s ease-out;
@@ -100,7 +100,7 @@ section#activities {
     #activities-box-links a:hover,
     #activities-box-links a:active {
         background-color: var(--color-dafic);
-        color: white;
+        color: whitesmoke;
 
         transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
