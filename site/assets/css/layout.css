@@ -198,7 +198,7 @@ footer {
     height: 32px;
 }
 
-#socials a:last-child {
+.link-links-page {
     animation: socials-icon-flash 1s ease-out 1.5s 1;
 }
 
