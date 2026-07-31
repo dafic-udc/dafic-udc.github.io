@@ -22,6 +22,8 @@ const showActivities = (activities, activitiesContainerID) => {
         const activityIcon = document.createElement('img');
         activityIcon.className = 'activity-icon';
         activityIcon.src = activity[3];
+        activityIcon.loading = 'lazy';
+        activityIcon.decoding = 'async';
 
         const activityName = document.createElement('span');
         activityName.className = 'activity-name';
