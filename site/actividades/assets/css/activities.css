@@ -45,8 +45,8 @@
     align-items: center;
     width: 240px;
     height: 160px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
     background-color: #ffffe8;
 }
 
@@ -58,7 +58,7 @@
 
 .activity-name {
     width: 100%;
-    height: 4em;
+    height: 3em;
     padding: 5px;
     margin: 0;
     font-size: 16px;
@@ -73,21 +73,45 @@
 
 .activity-description {
     width: 100%;
-    min-height: 7em;
-    max-height: 7em;
+    min-height: 8em;
+    max-height: 8em;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 5px;
-    margin: 0;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+    padding: 2px 2px 0px 6px;
+    margin: 3px 0;
+    box-sizing: border-box;
     font-size: 12px;
+    line-height: 1.3;
+    overflow-wrap: break-word;
     text-align: left;
     color: black;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.35) transparent;
+}
+
+.activity-description::-webkit-scrollbar {
+    width: 6px;
+}
+
+.activity-description::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.activity-description::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+}
+
+.activity-description p {
+    margin: 0;
 }
 
 .activity-date {
     width: 100%;
-    border-top: 5px solid black;
-    padding: 0.5em;
+    border-top: 4px solid black;
+    padding: 0.25em;
     margin: 0;
     font-size: 14px;
     text-align: center;
