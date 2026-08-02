@@ -26,7 +26,9 @@ Para probar a web en local, segue estes pasos:
 4. Inicia un servidor HTTP simple con Python:
 
   ```bash
-  python3 -m http.server
+  python3 -m http.server #porto 8000
+
+  python3 -m http.server <porto> #para elixir o porto
 ```
   > [!NOTE]
   > É preciso ter instalado Python versión 3 no teu equipo.
