@@ -23,8 +23,8 @@
     width: 264px;
     height: 93px;
     border: 5px solid var(--color-member-tag-border);
-    border-radius: 15px;
-
+    border-radius: 4px;
+    padding: 3px;
     background-color: var(--color-member-tag-bg);
 }
 
@@ -68,7 +68,7 @@ section#activities {
         max-width: 70ch;
         padding: 0.5ch 2ch;
         border: 2px solid white;
-        border-radius: 10px;
+        border-radius: 4px;
         margin-top: 30px;
         text-align: justify;
         background-color: #2c2c2c;
@@ -81,22 +81,27 @@ section#activities {
         align-items: center;
         gap: 1ch;
         width: 100%;
-        margin: 1ch;
+        margin:1.2ch 1ch 1ch 1ch;
     }
 
     #activities-box-links a {
         width: fit-content;
-        padding: 0.5ch;
+        padding: 0.6ch 1.4ch;
         border: 2px solid black;
-        border-radius: 5px;
+        border-radius: 6px;
         font-size: 0.9rem;
         text-decoration: none;
+        text-transform:uppercase;
         background-color: white;
         color: black;
-
-        transition: 0.3s;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        transition: background-color 0.3s, color 0.3s, transform 0.15s ease, box-shadow 0.15s ease;
+    
     }
-
+    #activities-box span{
+        margin-top: 0.5ch;
+    }
     #activities-box-links a:hover,
     #activities-box-links a:active {
         background-color: var(--color-dafic);
@@ -119,13 +124,14 @@ section#merch {
         align-items: center;
         max-width: 70ch;
         padding: 1em;
-        border: 2px solid white;
-        border-radius: 10px;
+        border: 3px solid white;
+        border-radius: 4px;
         background-color: #404040;
 
         span {
             font-size: 1.2em;
             text-decoration: underline;
+            text-transform: capitalize;
         }
 
         p {
