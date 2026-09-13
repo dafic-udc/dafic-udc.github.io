@@ -1,15 +1,32 @@
 [
     [
-        "Xornada Musical",
-        "Sentes curiosidade pola música? Tocas nalgún grupo ou banda? Faremos concertos, jams e talleres nos que calquera pode aprender sen importar o seu nivel!",
-        "??/09/2026",
-        "/actividades/assets/img/activities/xornadas_musicais.svg",
-        "/actividades/assets/img/poster/cartel_xornadas_anuncio.jpg"
+        "Xornadas de Benvida da UDC",
+        "Vén a coñecernos! Agardámoste no noso stand no Estadio Universitario do Campus de Elviña!",
+        "17/09/2026",
+        "/actividades/assets/img/activities/udc_black.svg"
     ],
     [
         "FIC Quiz",
         "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Fuiz (alternativa libre a Kahoot) cheo de retos e risas, demostra quen manda no ranking!",
-        "??/09/2026",
+        "17/09/2026",
         "/actividades/assets/img/activities/fuiz.svg"
+    ],
+    [
+        "Charla Egresados GCED",
+        "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC!",
+        "21/09/2026 (19:30)",
+        "/actividades/assets/img/activities/egresados.svg"
+    ],
+    [
+        "Charla Egresados GIA",
+        "Coñece a experiencia de antigos alumnos do Grao en Intelixencia Artificial da FIC!",
+        "23/09/2026 (19:30)",
+        "/actividades/assets/img/activities/egresados.svg"
+    ],
+    [
+        "Charla Egresados GEI",
+        "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC!",
+        "24/09/2026 (19:30)",
+        "/actividades/assets/img/activities/egresados.svg"
     ]
 ]

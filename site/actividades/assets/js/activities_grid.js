@@ -24,7 +24,7 @@ const activityTile = (activity) => {
 
 const showActivitiesGrid = async (containerID) => {
 
-    const DATA_URL = "/actividades/data/activities.json";
+    const DATA_URL = "/actividades/data/previous-activities.json";
     let activities;
 
     try {

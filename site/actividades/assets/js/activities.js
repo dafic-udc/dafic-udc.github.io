@@ -95,8 +95,3 @@ const showNextActivities = async (containerID = 'next-activities-list') => {
         showActivities(ACTIVITIES, containerID);
     }
 };
-
-const showPreviousActivities = async (containerID = 'previous-activities-list') => {
-    const ACTIVITIES = await fetchActivities(PREVIOUS_ACTIVITIES_DATA_URL);
-    showActivities(ACTIVITIES, containerID);
-};
