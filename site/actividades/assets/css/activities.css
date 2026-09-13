@@ -43,8 +43,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    width: 100%;
     height: 160px;
+    padding: 10px;
     border-top: 4px solid black;
     border-bottom: 4px solid black;
     background-color: #ffffe8;
