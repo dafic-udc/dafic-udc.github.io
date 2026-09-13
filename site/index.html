@@ -4,15 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
-		content="Asociación de estudantes da Facultade de Informática da Universidade da Coruña que apoia a representación estudantil e realiza actividades para o alumnado.">
-	<meta property="og:title" content="DAFIC">
-	<meta property="og:description"
-		content="Asociación de estudantes da Facultade de Informática da Universidade da Coruña">
-	<meta property="og:image" content="https://dafic.org/assets/img/Logo_DAFIC_cuadrado.svg">
-
 	<title>DAFIC - Welcome to DAFIC</title>
 	<link rel="icon" type="image/png" href="/assets/img/Logo_DAFIC_redondo.svg">
+	<meta name="description" content="Asociación de estudantes da Facultade de Informática da Universidade da Coruña que apoia a representación estudantil e realiza actividades para o alumnado.">
+
+	<!-- SEO -->
+	<link rel="canonical" href="https://dafic.org/">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://dafic.org/">
+	<meta property="og:title" content="DAFIC">
+	<meta property="og:description" content="Asociación de estudantes da Facultade de Informática da Universidade da Coruña">
+	<meta property="og:image" content="https://dafic.org/assets/img/Logo_DAFIC_cuadrado.svg">
+	<meta property="og:locale" content="gl_ES">
+
+	<!-- Style -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/home.css">
 	<link rel="stylesheet" type="text/css" href="/actividades/assets/css/activities.css">
@@ -42,9 +49,9 @@
 			<div id="next-activities-list" class="activities-list">
 				<!-- Updated by activities.js -->
 			</div>
-			<script src="/actividades/assets/js/activities.js"></script>
+			<script src="/actividades/assets/js/activities.js" defer></script>
 			<script>
-				showNextActivities();
+				document.addEventListener('DOMContentLoaded', () => showNextActivities());
 			</script>
 
 			<div id="activities-box" class="centered">
@@ -76,10 +83,12 @@
 				</div>
 			</article>
 
-			<script src="/assets/js/organizacion.js"></script>
+			<script src="/assets/js/organizacion.js" defer></script>
 			<script>
-				showXD();
-				showComs();
+				document.addEventListener('DOMContentLoaded', () => {
+					showXD();
+					showComs();
+				});
 			</script>
 		</section>
 
@@ -96,7 +105,7 @@
 				</p>
 
 				<figure>
-					<img src="/assets/img/pics/Merch-chapas.png">
+					<img src="/assets/img/pics/Merch-chapas.png" alt="" loading="lazy" decoding="async">
 					<figcaption>Chapa "UN 5 SON 6 CRÉDITOS".</figcaption>
 				</figure>
 			</div>
@@ -105,7 +114,7 @@
 
 	<footer>
 		<a class="web-badge-link" title="DAFIC" href="/">
-			<img class="web-badge" alt="DAFIC" src="/assets/img/web_badge.png">
+			<img class="web-badge" alt="DAFIC" src="/assets/img/web_badge.png" loading="lazy" decoding="async">
 		</a>
 		<div id="footer-links">
 			<a class="email" href="#" data-e="Y29udGFjdG9AZGFmaWMub3JnCg==">
@@ -121,21 +130,23 @@
 		</div>
 		<div id="socials">
 			<a href="https://github.com/dafic-udc">
-				<img class="socials-icon" title="GitHub" src="/assets/img/vendor/simple-icons/github.svg" alt="GitHub">
+				<img class="socials-icon" title="GitHub" src="/assets/img/vendor/simple-icons/github.svg" 
+					alt="GitHub" loading="lazy" decoding="async">
 			</a>
 			<a href="https://www.instagram.com/dafic_udc/">
-				<img class="socials-icon" title="Instagram" src="/assets/img/vendor/simple-icons/instagram.svg"
-					alt="Instagram">
+				<img class="socials-icon" title="Instagram" src="/assets/img/vendor/simple-icons/instagram.svg" 
+					alt="Instagram" loading="lazy" decoding="async">
 			</a>
 			<a href="https://www.linkedin.com/company/dafic/">
 				<img class="socials-icon" title="LinkedIn" src="/assets/img/vendor/tabler/brand-linkedin.svg"
-					alt="LinkedIn">
+					alt="LinkedIn" loading="lazy" decoding="async">
 			</a>
 			<a href="https://dafic.org/links">
-				<img class="socials-icon" title="Links" src="/assets/img/vendor/tabler/link.svg" alt="Links">
+				<img class="socials-icon" title="Links" src="/assets/img/vendor/tabler/link.svg" 
+					alt="Links" loading="lazy" decoding="async">
 			</a>
 		</div>
-		<script src="/assets/js/protect_email.js"></script>
+		<script src="/assets/js/protect_email.js" defer></script>
 	</footer>
 
 </body>
