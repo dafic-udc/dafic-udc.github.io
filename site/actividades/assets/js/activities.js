@@ -1,6 +1,23 @@
 const NEXT_ACTIVITIES_DATA_URL = '/actividades/data/next-activities.json';
 const PREVIOUS_ACTIVITIES_DATA_URL = '/actividades/data/previous-activities.json';
 
+const fitActivityName = (activityName) => {
+
+    const STYLE = getComputedStyle(activityName);
+    const MAX_SIZE = parseFloat(STYLE.getPropertyValue('--activity-name-max-font-size'));
+    const MIN_SIZE = parseFloat(STYLE.getPropertyValue('--activity-name-min-font-size'));
+    if (!MAX_SIZE || !MIN_SIZE) return;
+
+    for (let size = MAX_SIZE; size >= MIN_SIZE; size -= 0.5) {
+        activityName.style.fontSize = `${size}px`;
+        if (activityName.scrollHeight <= activityName.clientHeight) return;
+    }
+};
+
+const fitActivityNames = (activitiesList) => {
+    activitiesList.querySelectorAll('.activity-name').forEach(fitActivityName);
+};
+
 const showActivities = (activities, activitiesContainerID) => {
 
     // Retrieve <div> container:
@@ -27,9 +44,12 @@ const showActivities = (activities, activitiesContainerID) => {
         activityName.className = 'activity-name';
         activityName.innerText = activity[0];
 
-        const activityDesc = document.createElement('p');
+        const activityDesc = document.createElement('div');
         activityDesc.className = 'activity-description';
-        activityDesc.innerText = activity[1];
+
+        const activityDescText = document.createElement('p');
+        activityDescText.innerText = activity[1];
+        activityDesc.appendChild(activityDescText);
 
         const activityDate = document.createElement('span');
         activityDate.className = 'activity-date';
@@ -63,6 +83,8 @@ const showActivities = (activities, activitiesContainerID) => {
 
     // Append the populated list to the container:
     activitiesContainer.appendChild(activitiesList);
+
+    fitActivityNames(activitiesList);
 };
 
 const fetchActivities = async (dataUrl) => {
