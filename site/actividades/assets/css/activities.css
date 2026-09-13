@@ -24,7 +24,7 @@
 
     width: 240px;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
 
     background-color: white;
@@ -78,6 +78,9 @@
     align-items: safe center;
     justify-content: center;
     text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
 
     overflow-y: auto;
     overflow-x: hidden;
@@ -136,4 +139,6 @@
     text-align: center;
     color: white;
     background-color: grey;
+    font-weight: bold;
+    letter-spacing: 0.02em;
 }
