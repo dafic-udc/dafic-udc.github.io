@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   sodipodi:docname="camera.svg"
+   viewBox="0 0 421.71881 329.1286"
+   version="1.1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="camera.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   width="421.71881"
+   height="329.1286"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3756"
+       y2="569.51001"
+       gradientUnits="userSpaceOnUse"
+       x2="429.06"
+       y1="535.66998"
+       x1="430.82999"
+       inkscape:collect="always">
+      <stop
+         id="stop3722"
+         style="stop-color:#ffffff"
+         offset="0" />
+      <stop
+         id="stop3724"
+         style="stop-color:#3f3f3f;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="1024"
+     inkscape:window-maximized="0"
+     inkscape:zoom="0.98994949"
+     inkscape:window-x="0"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="g3728"
+     inkscape:cx="145.46197"
+     inkscape:cy="214.65742"
+     inkscape:window-width="1898"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-159.1048,-370.0147)">
+    <g
+       id="g3728"
+       style="stroke-width:0;stroke-dasharray:none">
+      <path
+         id="path2892"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         d="m 238.21,441.65 -0.71,-18.93 c 0,0 24.286,-21.429 74.286,-7.5 l 2.8572,22.143 -76.429,4.2857 z" />
+      <rect
+         id="rect3700"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="420.92999"
+         x="243.21001" />
+      <rect
+         id="rect3702"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="416.64999"
+         x="258.92999" />
+      <rect
+         id="rect3704"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="414.85999"
+         x="266.42999" />
+      <rect
+         id="rect3706"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="414.51001"
+         x="275" />
+      <rect
+         id="rect3708"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="418.79001"
+         x="251.42999" />
+      <rect
+         id="rect3710"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="414.85999"
+         x="283.20999" />
+      <rect
+         id="rect3712"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="415.57999"
+         x="291.79001" />
+      <rect
+         id="rect3714"
+         style="fill:#cfcfcf;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         height="23.929001"
+         width="4.6429"
+         y="417.35999"
+         x="300" />
+      <path
+         id="path2890"
+         style="fill:#326e76;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         d="m 161.62,490.21 -1.5152,133.34 v 48.487 c 0,0 0.50507,24.749 27.779,25.759 27.274,1.0102 34.345,-0.50508 34.345,-0.50508 l 17.678,-2.5254 14.142,1.0102 311.63,0.50508 c 0,0 12.627,-4.5457 12.627,-13.132 0,-8.5863 1.5152,-192.43 1.5152,-192.43 l -3.5355,-5.0508 c 0,0 -4.5457,-34.345 -32.83,-43.942 -28.284,-9.5964 -30.305,-8.5863 -30.305,-8.5863 0,0 -22.223,-7.0711 -29.294,-50.003 0,0 -2.5254,-12.122 -26.264,-12.122 h -89.904 c 0,0 -14.142,0.50508 -22.728,15.657 -8.5863,15.152 -11.617,30.305 -11.617,30.305 0,0 -10.607,14.647 -18.688,15.152 -8.0812,0.50508 -77.277,7.0711 -77.277,7.0711 l -48.487,7.5761 c 0,0 -24.244,9.0914 -27.274,43.437 z" />
+      <path
+         id="path2894"
+         style="fill:#0b1b1e;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         d="m 353.93,401.65 11.786,-22.143 c 0,0 80.357,-7.8571 107.5,1.7857 l 8.9286,19.286 -6.7857,4.6428 -93.571,-0.35714 -27.857,-3.2143 z" />
+      <path
+         id="path2896"
+         style="fill:#cde5ea;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         d="m 169.64,488.43 c 6.4286,0.71429 91.786,1.7857 91.786,1.7857 0,0 8.5714,8.5714 7.1429,17.143 0,0 0.35714,13.571 -13.571,14.643 l -6.4286,6.0714 -2.1429,148.57 c 0,0 -45.357,21.071 -75.714,-2.1429 l -1.0714,-186.07 z" />
+      <path
+         id="path2898"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         d="m 175.71,468.08 c 0,0 1.0714,-16.786 31.429,-18.571 30.357,-1.7857 32.143,-0.71429 32.143,-0.71429 0,0 16.786,8.2143 15,14.286 -1.7857,6.0714 -7.1428,21.429 -31.071,21.429 -23.929,0 -37.143,0.71428 -37.143,0.71428 0,0 -11.071,-3.9286 -10.357,-17.143 z" />
+      <ellipse
+         id="path2900"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-19.286,-3.9286)"
+         cx="224.28572"
+         cy="470.75504"
+         rx="18.571428"
+         ry="12.678572" />
+      <ellipse
+         id="path2902"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-1.0714,-2.5)"
+         cx="283.21429"
+         cy="491.11218"
+         rx="12.142858"
+         ry="11.607142" />
+      <circle
+         id="path3692"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="matrix(1.2798,0,0,1.2726,-126.16,-194.02)"
+         cx="425.35715"
+         cy="595.2193"
+         r="98.571426" />
+      <circle
+         id="path3690"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="matrix(1.2153,0,0,1.2044,-98.706,-153.44)"
+         cx="425.35715"
+         cy="595.2193"
+         r="98.571426" />
+      <circle
+         id="path3676"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         cx="343.92856"
+         cy="450.21933"
+         r="5.3571429" />
+      <circle
+         id="path3686"
+         style="fill:#326e76;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-7.1429,-31.786)"
+         cx="425.35715"
+         cy="595.2193"
+         r="98.571426" />
+      <circle
+         id="path3688"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="matrix(1.1777,0,0,1.2034,-80.61,-135.68)"
+         cx="423.57144"
+         cy="580.93359"
+         r="69.285713" />
+      <circle
+         id="path3684"
+         style="fill:#326e76;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-5.3572,-17.5)"
+         cx="423.57144"
+         cy="580.93359"
+         r="69.285713" />
+      <circle
+         id="path3680"
+         style="fill:#f0f0f0;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-5.7143,-10.357)"
+         cx="423.92856"
+         cy="573.79077"
+         r="36.07143" />
+      <circle
+         id="path3678"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(-5.1786,-1.6072)"
+         cx="423.39285"
+         cy="565.04077"
+         r="17.321428" />
+      <circle
+         id="path3694"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="translate(150.01,1.0102)"
+         cx="343.92856"
+         cy="450.21933"
+         r="5.3571429" />
+      <ellipse
+         id="path3716"
+         style="fill:#f8f8f8;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         transform="matrix(0.89121,0,0,0.86057,3.0931,59.941)"
+         cx="224.28572"
+         cy="470.75504"
+         rx="18.571428"
+         ry="12.678572" />
+      <ellipse
+         id="path3718"
+         style="fill:url(#linearGradient3756);stroke-width:0;stroke-dasharray:none"
+         transform="matrix(0.61017,0,0,0.63514,139.23,209.81)"
+         cx="429.06229"
+         cy="550.82147"
+         rx="14.89975"
+         ry="18.687822" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:date>2010-08-02T20:12:58</dc:date>
+        <dc:description>SLR Camera</dc:description>
+        <dc:source>https://openclipart.org/detail/76255/slr-camera-by-shokunin</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>shokunin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>camera</rdf:li>
+            <rdf:li>photography</rdf:li>
+            <rdf:li>retro.photo</rdf:li>
+            <rdf:li>slr</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
