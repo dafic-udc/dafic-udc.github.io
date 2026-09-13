@@ -38,6 +38,8 @@ const showMember = (container, memberData) => {
     const memberIcon = document.createElement("img");
     memberIcon.src = memberData["icono"] == "" ? DEFAULT_ICON : memberData["icono"];
     memberIcon.className = "web-badge";
+    memberIcon.loading = "lazy";
+    memberIcon.decoding = "async";
     memberIcon.addEventListener("error", function () {
         this.src = DEFAULT_ICON;
     }, { once: true });
