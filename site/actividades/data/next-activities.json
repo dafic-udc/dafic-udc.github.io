@@ -1,32 +1,23 @@
 [
     [
-        "Xornadas de Benvida da UDC",
-        "Vén a coñecernos! Agardámoste no noso stand no Estadio Universitario do Campus de Elviña!",
-        "17/09/2026",
-        "/actividades/assets/img/activities/udc_black.svg"
-    ],
-    [
-        "FIC Quiz",
-        "Canto sabes realmente da FIC? Pon a proba os teus coñecementos nun Fuiz (alternativa libre a Kahoot) cheo de retos e risas, demostra quen manda no ranking!",
-        "17/09/2026",
-        "/actividades/assets/img/activities/fuiz.svg"
-    ],
-    [
         "Charla Egresados GCED",
         "Coñece a experiencia de antigos alumnos do Grao en Ciencia e Enxeñaría de Datos da FIC!",
         "21/09/2026 (19:30)",
-        "/actividades/assets/img/activities/egresados.svg"
+        "/actividades/assets/img/activities/egresados.svg",
+        "https://www.instagram.com/p/DdZWQl_oUzg"
     ],
     [
         "Charla Egresados GIA",
         "Coñece a experiencia de antigos alumnos do Grao en Intelixencia Artificial da FIC!",
         "23/09/2026 (19:30)",
-        "/actividades/assets/img/activities/egresados.svg"
+        "/actividades/assets/img/activities/egresados.svg",
+        "/actividades/assets/img/poster/cartel_egresados_gia_setembro26.png"
     ],
     [
         "Charla Egresados GEI",
         "Coñece a experiencia de antigos alumnos do Grao en Enxeñaría Informática da FIC!",
         "24/09/2026 (19:30)",
-        "/actividades/assets/img/activities/egresados.svg"
+        "/actividades/assets/img/activities/egresados.svg",
+        "/actividades/assets/img/poster/cartel_egresados_gei_setembro26.png"
     ]
 ]

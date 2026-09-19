@@ -1,5 +1,17 @@
 [
     {
+        "name": "FIC Quiz",
+        "date": "17/09/2026",
+        "image": "/actividades/assets/img/activities/fuiz.svg",
+        "link": ""
+    },
+    {
+        "name": "Xornadas de Benvida da UDC",
+        "date": "17/09/2026",
+        "image": "/actividades/assets/img/activities/udc_white.svg",
+        "link": ""
+    },
+    {
         "name": "Torneo de SuperTuxKart",
         "date": "13/05/2026",
         "image": "/actividades/assets/img/activities/supertux.svg",
