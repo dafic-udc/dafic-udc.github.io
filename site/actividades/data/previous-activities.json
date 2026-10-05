@@ -1,5 +1,23 @@
 [
     {
+        "name": "Charla Egresados GEI",
+        "date": "24/09/2026",
+        "image": "/actividades/assets/img/activities/egresados.svg",
+        "link": ""
+    },
+    {
+        "name": "Charla Egresados GIA",
+        "date": "23/09/2026",
+        "image": "/actividades/assets/img/activities/egresados.svg",
+        "link": ""
+    },
+    {
+        "name": "Charla Egresados GCED",
+        "date": "21/09/2026",
+        "image": "/actividades/assets/img/activities/egresados.svg",
+        "link": ""
+    },
+    {
         "name": "FIC Quiz",
         "date": "17/09/2026",
         "image": "/actividades/assets/img/activities/fuiz.svg",
