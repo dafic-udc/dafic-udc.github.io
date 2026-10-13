@@ -15,7 +15,13 @@ const activityTile = (activity) => {
     const activityDate = document.createElement("span");
     activityDate.innerText = activity["date"];
 
-    tile.append(activityName, activityIcon, activityDate);
+    const activityLink = document.createElement("a");
+    activityLink.href = activity["link"];
+
+    activityLink.appendChild(activityIcon);
+    activityLink.appendChild(activityName);
+
+    tile.append(activityLink, activityDate);
     tileWrapper.appendChild(tile);
     return tileWrapper;
 
