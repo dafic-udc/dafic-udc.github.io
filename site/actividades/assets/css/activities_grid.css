@@ -16,16 +16,34 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 13em;
-    height: 13em;
-    padding: 15px;
+    line-height: 1.5;
+    width: 200px;
+    height: 200px;
+    padding: 0.5lh;
     border-radius: 15px;
     background-color: var(--color-dafic);
     color: white;
     text-align: center;
+    font-size: 0.8rem;
 }
 
-.activity-tile img {
-    max-width: 80%;
-    max-height: 80%;
+.activity-tile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 2lh;
+    margin-bottom: 15px;
+}
+
+.activity-tile-image {
+    display: block;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.activity-tile-date {
+    height: lh;
+    margin-top: 15px;
 }

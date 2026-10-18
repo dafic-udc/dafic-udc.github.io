@@ -1,8 +1,8 @@
 /* ACTIVITIES */
 
 #previous-activities {
-    color: var(--color-dafic);
-    background-color: white;
+    color: white;
+    background-color: var(--color-dafic);
 }
 
 .activities-list {

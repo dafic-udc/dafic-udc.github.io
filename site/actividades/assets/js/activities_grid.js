@@ -3,25 +3,29 @@ const activityTile = (activity) => {
     const tileWrapper = document.createElement("div");
     tileWrapper.className = "activity-tile-wrapper";
 
-    const tile = document.createElement("div");
+    const tile = document.createElement(activity.link != "" ? "a" : "div");
+
+    if (activity.link != "") {
+        tile.href = activity.link;
+    }
+    
     tile.className = "activity-tile";
 
     const activityName = document.createElement("span");
-    activityName.innerText = activity["name"];
+    activityName.className = "activity-tile-name";
+    activityName.innerText = activity.name;
     
-    const activityIcon = document.createElement("img");
-    activityIcon.src = activity["image"];
+    const activityImage = document.createElement("img");
+    activityImage.className = "activity-tile-image";
+    activityImage.src = activity.image;
     
     const activityDate = document.createElement("span");
-    activityDate.innerText = activity["date"];
+    activityDate.className = "activity-tile-date";
+    activityDate.innerText = activity.date;
 
-    const activityLink = document.createElement("a");
-    activityLink.href = activity["link"];
-
-    activityLink.appendChild(activityIcon);
-    activityLink.appendChild(activityName);
-
-    tile.append(activityLink, activityDate);
+    
+    
+    tile.append(activityName, activityImage, activityDate);
     tileWrapper.appendChild(tile);
     return tileWrapper;
 

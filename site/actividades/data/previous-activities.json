@@ -1,5 +1,11 @@
 [
     {
+        "name": "Charla Dungeons & Dragons",
+        "date": "14/10/2026",
+        "image": "/actividades/assets/img/activities/dragon-d-white.svg",
+        "link": "https://www.instagram.com/p/Deb08rwojgI/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+    },
+    {
         "name": "Charla Egresados GEI",
         "date": "24/09/2026",
         "image": "/actividades/assets/img/activities/egresados.svg",
@@ -67,19 +73,19 @@
     },
     {
         "name": "Feira de investigación",
-        "date": "03-05/03/2026",
+        "date": "03/03/2026",
         "image": "/actividades/assets/img/activities/feria_investigacion.svg",
         "link": ""
     },
     {
         "name": "Visita ao CITIC",
-        "date": "11-12/02/2026",
+        "date": "11/02/2026",
         "image": "/actividades/assets/img/activities/citic.svg",
         "link": ""
     },
     {
         "name": "Visita ao CITEEC",
-        "date": "03,05/02/2026",
+        "date": "03/02/2026",
         "image": "/actividades/assets/img/activities/citeec_white.svg",
         "link": ""
     },
@@ -103,7 +109,7 @@
     },
     {
         "name": "Concurso de fotografía",
-        "date": "08/09/2025 - 25/09/2025",
+        "date": "08/09/2025",
         "image": "/actividades/assets/img/activities/camera.svg",
         "link": "https://www.instagram.com/p/DPFMKQCCKMU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
@@ -145,7 +151,7 @@
     },
     {
         "name": "Visita ao CITIC",
-        "date": "05-07/05/2025",
+        "date": "05/05/2025",
         "image": "/actividades/assets/img/activities/citic.svg",
         "link": ""
     },
