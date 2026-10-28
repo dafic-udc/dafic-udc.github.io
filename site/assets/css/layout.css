@@ -96,7 +96,11 @@ h5,
 h6 {
     text-align: center;
     margin: 0.45em 0;
-    -webkit-text-stroke: 0.04em black;
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 h1 {
