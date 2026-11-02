@@ -1,0 +1,42 @@
+#event-halloween-header-spider {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  height: 32px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#event-halloween-spider-bubble {
+  position: absolute;
+  padding: 2px 10px;
+  color: black;
+  background: white;
+  border: 2px solid;
+  border-radius: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(.6);
+  transform-origin: right;
+  pointer-events: none;
+  user-select: none;
+  transition: .15s;
+}
+
+#event-halloween-spider-bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  width: 9px;
+  height: 9px;
+  background: white;
+  border: solid;
+  border-width: 2px 2px 0 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#event-halloween-spider-bubble.show {
+  opacity: 1;
+  transform: scale(1);
+}
