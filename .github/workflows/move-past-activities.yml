@@ -1,0 +1,37 @@
+name: Mover actividades pasadas al JSON propio
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC = 06:00 in Madrid; it doesn’t trigger instantly, though, so it should launch sometime between 6:00 and 7:00 AM—provided GitHub Actions isn’t down.
+  workflow_dispatch:
+
+permissions:
+  contents: write # to commit
+  actions: write # to trigger the Pages deployment (Pushes made using a workflow's `GITHUB_TOKEN` do not trigger other workflows; however, if a personal token is used, this restriction could be lifted)
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mover actividades terminadas
+        run: python3 .github/scripts/move_past_activities.py # Python usually points to Python 3; for compatibility, it is better to use 'python3' instead of 'python'
+
+      - name: Commit y deploy si hay cambios
+        env:
+          GH_TOKEN: ${{ github.token }}
+        #Linking an email address is not mandatory; the email is handled by a GitHub bot—specifically "https://api.github.com/users/github-actions[bot]"—but you can also provide any user's email address.
+        run: |
+          if git diff --quiet; then
+            echo "Sin cambios - No hay tareas que reorganizar."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com" 
+          git add site/actividades/data/
+          git commit -m "chore(bot): mover actividades pasadas a previous-activities"
+          git push
+          # Pushes made using GITHUB_TOKEN do not trigger other workflows,
+          # so we triggered the deployment manually
+          gh workflow run static.yml --ref main
