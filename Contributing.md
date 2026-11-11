@@ -14,7 +14,7 @@
 - EL código debe priorizar el inglés
 - Los títulos de commits, issues , Pull requests (solicitudes de cambios) deben usar el formato **Conventional Commits** (formato: `<tipo>(<ámbito opcional>): <descripción>`)
 
-## Windows comandos básicos
+## Windows comandos básicos `(vacío)`
 
 ## Linux comandos básicos
 
