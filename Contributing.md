@@ -190,29 +190,26 @@ Si es tu ordenador entonces puedes hacer directamente `sudo <codigo/lineas_coman
 sudo mkdir /etc/ejemplo # /etc suele venir restringido
 ```
 
-
 ## Como usar Git
 
-### Para descargar el código con el repositorio git:
+### Como descargar el código del repositorio
 
-> <u>Si tienes permisos en ese repositorio</u>
+Si tienes permisos en ese repositorio, lo clonas directamente
 
 ```bash
-# git clone <url repositorio>
+git clone <url_repositorio>
+#Ejemplo
 git clone https://github.com/dafic-udc/dafic-udc.github.io.git
-
-# En el boton verde "<> Code" tienes un menú dedicado a esto
 ```
 
-> <u>Otra forma es haciendo un repositorio propio en tu cuenta de Github:</u>
->
-> -Lo recomendado en hacer fork (boton gris superior "Fork").
->
-> Luego haces `git clone <url_repositorio_creado>`
->
-> -Sin hacer fork: creas un repositorio vacío _(boton verde "New" en tu lista de repositorios)_ y enlazas tu código descargado a ese repositorio, Github ya te dice como hacerlo al crear el repositorio.
+En el botón verde "<> Code" del repositorio tienes un menú dedicado a esto.
 
-### Revisar a donde apunta tu configuracion git del código
+Si no tienes permisos, otra forma es hacer un repositorio propio en tu cuenta de Github:
+
+- **Con fork (recomendado)**: pulsas el botón gris superior "Fork" y luego haces `git clone <url_repositorio_creado>`
+- **Sin fork**: creas un repositorio vacío _(botón verde "New" en tu lista de repositorios)_ y enlazas tu código descargado a ese repositorio, Github ya te dice cómo hacerlo al crearlo.
+
+### Como revisar a que repositorio apunta tu configuración git
 
 ```bash
 git remote -v
@@ -226,86 +223,120 @@ upstream  https://github.com/dafic-udc/dafic-udc.github.io.git (fetch)
 upstream  https://github.com/dafic-udc/dafic-udc.github.io.git (push)
 ```
 
-Es importante que **origin** apunte al repositorio donde quieres guardar tus cambios. **Upstream** decides tu a donde apunta, en este caso es mejor hacer que apunte al repositorio original de DAFIC.
-_Tanto **Origin** como **Upstream** son editables:_
+Es importante que **origin** apunte al repositorio donde quieres guardar tus cambios. **Upstream** decides tú a dónde apunta, en este caso es mejor hacer que apunte al repositorio original de DAFIC. Tanto **origin** como **upstream** son editables:
 
-- Si clonaste el repositorio **Origin** y **Upstream** son idénticos.
-- Si clonaste un fork tuyo: **Origin** apunta a tu repositorio, upstream debe apuntar al repositorio original.
-- Si clonaste un repositorio tuyo , que no es **fork**, puedes hacer que **Upstream** quede igual que con el **fork**:
+- Si clonaste el repositorio original: **origin** y **upstream** son idénticos.
+- Si clonaste un fork tuyo: **origin** apunta a tu repositorio y **upstream** debe apuntar al repositorio original.
+- Si clonaste un repositorio tuyo que no es un fork, puedes hacer que **upstream** quede igual que con el fork:
 
-  `git remote set-url upstream https://github.com/dafic-udc/dafic-udc.github.io.git`
+```bash
+git remote set-url upstream https://github.com/dafic-udc/dafic-udc.github.io.git
+```
 
-Para editar Origin/Upstream:
+Para editar origin o upstream
 
 ```bash
 git remote set-url origin https://github.com/mglourido/dafic-udc.github.io.git
-#cambias "origin" por "upstream" y con eso editas upstream
+git remote set-url upstream <url> # cambias "origin" por "upstream" y editas upstream
 ```
 
 ### Como generar una rama nueva
 
-`git checkout -b <nombre>` te genera una rama nueva usando el código que tienes en la rama donde te encontrabas, y te mueve a esa rama nueva. Si usas `git checkout <nombre>` te meuve a esa rama, sin generarla, porque ya debe existir. Si tienes cambios hechos o commits sin hacer push, se van tambien a esa rama nueva, pero se van de la rama donde estabas al hacer el checkout.
+```bash
+git checkout -b <nombre> # crea la rama nueva y te mueve a ella
+git switch -c <nombre> # equivalente, más claro
+```
 
-Checkout puede dar fallos si tienes cambios hechos sin commit, se puedes usar `git switch -c <nombre>` para crear la rama, y `git switch <nombre>` para moverse; es más claro que checkout.
+La rama nueva parte del código de la rama donde te encontrabas. Los cambios que tengas sin commit se van contigo a la rama nueva.
 
-### Como borrar una rama remota en tu fork
-
-`git push origin --delete <nombre>`
+Para moverte a una rama que ya existe (sin generarla)
 
 ```bash
-git branch -d <nombre>   # borra la rama local si ya está fusionada
-git branch -D <nombre>   # la fuerza aunque no esté fusionada
+git checkout <nombre>
+git switch <nombre>
+```
+
+`checkout` puede dar fallos si tienes cambios hechos sin commit. `switch` es más claro, por eso es el recomendado.
+
+### Como borrar una rama
+
+Para borrar una rama remota en tu fork
+
+```bash
+git push origin --delete <nombre>
+```
+
+Para borrar una rama local
+
+```bash
+git branch -d <nombre> # borra la rama si ya está fusionada
+git branch -D <nombre> # fuerza el borrado aunque no esté fusionada (si está en un PR sin fusionar, si haces esto, pierdes los cambios asociados en ese PR)
 ```
 
 ### Como guardar cambios
 
-En git se guardan cambios haciendo **commit**. Piensa en él como checkpoints de juegos, pero más avanzados ya que te deja ver los cambios y más cosas útiles.
+En git se guardan cambios haciendo **commit**. Piensa en él como checkpoints de juegos, pero más avanzados ya que te deja ver los cambios y más cosas útiles; forman parte del historial del repositorio y ramas locales.
 
-#### Como agregar los cambios a un Commit
+#### Como agregar los cambios a un commit desde VSCode
 
-> Si usas VSCode , esta ya es muy intuitivo, viene integrado sin extensiones
+Si usas VSCode es muy intuitivo, viene integrado sin extensiones.
 
-Pulsas en el boton superior "Ver"-> "Control de versiones" ("Source control" si lo tienes en inglés)
+1. Pulsas en el botón superior "Ver" -> "Control de versiones" ("Source control" si lo tienes en inglés).
+2. Te aparecerá una lista con título "Cambios", ahí estarán todos los archivos con cambios sin commit. Si pulsas en el "+" se añaden a los cambios adjuntos al commit futuro ("Cambios preparados" / "Staged Changes").
+3. Cuando pulses en el botón commit se te abrirá una ventana "COMMIT_EDITMSG".
 
-- Te aparecera una lista con título "Cambios", ahí estarán todos los archivos con cambios sin commit; si pulsas en el "+" se añaden a los cambios adjuntos al commit futuro ("cambios preparados" / "Staged Changes")
+La primera línea es el título del commit (revisa las [normas del repositorio](#normas-del-repositorio) para saber qué formato debe tener). Un commit no solo lo ves tú, cuando mandes una solicitud de cambios aparecerán todos los que hiciste. Hacer buenos commits no solo te ayuda a ti, sino a quienes deban revisar tus cambios.
 
-Cuando pulses en el boton commit se te abrirá una ventana "COMMIT_EDITMSG"
+Después del título va la descripción. Para eso haces saltos de línea y escribes lo que consideres. Las líneas con `#` al inicio dan información del commit y de los cambios que hay, y no aparecen en la descripción.
 
-La primera linea es el título del commit (revisa las normas básicas para saber que formato deben tener). Un commit no solo lo ves tú, cuando mandes una solicitud de cambios aparecerán todos los que hiciste.
+#### Como agregar los cambios a un commit por terminal
 
-Despues de eso es la descripción. Para eso haces saltos de linea y escribes lo que consideres, no pongas # al inicio, los comentarios no se cojen en la descripción.
-
-Las lineas con # al inicio, dan información del commit y de los cambios que hay.
-
-> Por terminal
-
-**Para ver los cambios que hay** `git status` . Te saldrá la rama actual e información para los archivos (rutas). Git muchas veces muestra comandos e información de ayuda para saber que hacer.
+Para ver los cambios que hay
 
 ```bash
-#Ejemplo actual mío
+git status
+```
+
+Te saldrá la rama actual e información de los archivos (rutas). Git muchas veces muestra comandos e información de ayuda para saber qué hacer.
+
+Ejemplo actual mío
+```bash
 # Tengo algunos cambios del archivo ya añadidos al commit, por eso aparece el mismo archivo en confirmados y en no rastreados
 git status
-
+#salida: 
 En la rama mejorar-readme # esta es mi rama local actual
-Tu rama está actualizada con 'origin/mejorar-readme'. # esta es mi rama actual
+Tu rama está actualizada con 'origin/mejorar-readme'. # esta es mi rama remota
 
-Cambios a ser confirmados: # cambios añadidos al commit . Aquí aparece solo el archivo, no las lineas
+Cambios a ser confirmados: # cambios añadidos al commit. Aquí aparece solo el archivo, no las líneas
   (usa "git restore --staged <archivo>..." para sacar del área de stage)
         nuevos archivos: Contributing.md
 
-Cambios no rastreados para el commit: # Archivos que tienen cambios y no estan añadidos al commit
+Cambios no rastreados para el commit: # archivos que tienen cambios y no están añadidos al commit
   (usa "git add <archivo>..." para actualizar lo que será confirmado)
   (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
         modificados:     Contributing.md
 ```
 
-**Para ver que cambios tienes realmente añadidos al commit sin confirmar**, no solo rutas de archivos `git diff #todos los cambios` `git diff --staged # cambios añadidos al commit`
+Para ver qué cambios tienes realmente añadidos al commit sin confirmar (no solo las rutas de los archivos)
 
-Las lineas nuevas van con "+" al inicio, las viejas con "-"
+```bash
+git diff # todos los cambios
+git diff --staged # cambios añadidos al commit
+```
 
-**Para añadir los cambios al commit sin confirmar** `git add <ruta> # ruta es la ruta del archivo` o puedes hacerlo por bloques `git add -p <ruta>`, esto último no se enseña en este manual, puedes usar **--help** al final para recibir ayuda `git add -p --help`
+Las líneas nuevas van con "+" al inicio, las viejas con "-".
 
-**Para quitar cambios añadidos al commit sin confirmar, sin perder esos cambios**
+Para añadir los cambios al commit sin confirmar
+
+```bash
+git add <ruta> # ruta del archivo
+git add . # todo
+git add -p <ruta> # solo algunos bloques
+```
+
+El modo `-p` no se enseña en este manual, puedes usar `--help` al final para recibir ayuda: `git add -p --help`
+
+Para quitar cambios añadidos al commit sin confirmar, sin perder esos cambios
 
 ```bash
 # Un archivo
@@ -318,7 +349,7 @@ git restore --staged .
 git restore --staged -p <ruta>
 ```
 
-**Para deshacer los cambios que tienes sin commit**, cuidado, no podrás recuperar los cambios.
+Para deshacer los cambios que tienes sin commit
 
 ```bash
 git restore <ruta>        # un archivo
@@ -326,7 +357,9 @@ git restore -p <ruta>     # solo algunos bloques
 git restore .             # todo
 ```
 
-**Para deshacer un commit hecho**. Aqui se enseña como solo quitar el que es primero para adelante, ~1 indica cuantos commits deshacer desde la cabeza (HEAD)
+> **Cuidado, no podrás recuperar esos cambios.**
+
+Para deshacer un commit hecho. Aquí solo se enseña cómo quitar los últimos, `~1` indica cuántos commits deshacer desde la cabeza (HEAD)
 
 ```bash
 git reset --soft HEAD~1    # deshace el commit, deja los cambios en staged
@@ -336,17 +369,21 @@ git reset --hard HEAD~1    # deshace el commit y borra los cambios
 
 Se pueden quitar commits específicos usando su **hash**, pero esto no se tratará en el manual.
 
-**Para confirmar el commit** `git commit -m <mensaje>`.
+Para confirmar el commit
+
+```bash
+git commit -m "<mensaje>"
+```
 
 ```bash
 git commit -m "docs: v1 contributing"
-
+# salida: 
 [mejorar-readme acc4073] docs: v1 contributing # [rama hash-corto-commit] mensaje del commit
  1 file changed, 200 insertions(+) # 1 archivo tocado, 200 líneas añadidas (0 borradas)
  create mode 100644 Contributing.md # archivo nuevo; 100644 = archivo normal (rw-r--r--)
 ```
 
-Ejemplo de uso real de todo esto
+#### Ejemplo de uso
 
 ```bash
 > git status
@@ -385,23 +422,32 @@ Archivos sin seguimiento:
         Contributing.md
 
 no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
-
 ```
 
-### Para subir los cambios al servidor (hacer push)
+### Como subir los cambios al servidor (hacer push)
 
-`git push` subes los commits a la ruta origin
+```bash
+git push # subes los commits a la ruta origin
+```
 
-Si no has hecho ningún push, seguramente tengas que publicar la rama nueva, git ya te dice como se hace, asi que haz git push y este te enseña el comando adaptado
-`git push --set-upstream origin <rama>`
+Si no has hecho ningún push, seguramente tengas que publicar la rama nueva. Git ya te dice cómo se hace, así que haz `git push` y este te enseña el comando adaptado
 
-puedes hacer `git push origin/<rama>` por si quieres mandar eso cambios a otra rama, y cambiar origin por upstream tambien.
+```bash
+git push --set-upstream origin <rama>
+```
 
-Ejemplo real
+Si quieres mandar esos cambios a otra rama, o a upstream en vez de origin
+
+```bash
+git push origin <rama>
+git push upstream <rama>
+```
+
+#### Ejemplo de uso
 
 ```bash
 git push
-
+# salida: 
 Enumerando objetos: 4, listo.
 Contando objetos: 100% (4/4), listo.
 Compresión delta usando hasta 12 hilos
@@ -409,95 +455,126 @@ Comprimiendo objetos: 100% (3/3), listo.
 Escribiendo objetos: 100% (3/3), 3.39 KiB | 3.39 MiB/s, listo.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/mglourido/dafic-udc.github.io.git # esta el la url que usó
+To https://github.com/mglourido/dafic-udc.github.io.git # esta es la url del repositorio que usó
    29460d5..27883ba  mejorar-readme -> mejorar-readme
 ```
 
-Ha veces puede que el push falle por no tener tu código actualizado, en ese caso puedes hacer
-`git fetch` para que descargue el codigo de origin y upstream,`git fetch upstream` si solo quieres upstream, `git fetch upstream/main` si solo quieres la rama main de upstream; todo esto tambien se puede con origin o con una url que le pases.
+### Como actualizar tu código (fetch, pull y rebase)
 
-Una vez actualizado git, puedes hacer pull o rebase.
-
-`git pull` = `git fetch` + integrar. Descarga los commits nuevos del remote y los integra en tu rama actual (por defecto con `merge`; con `git pull --rebase` usa `rebase`).
-
-`git rebase <rama>` no descarga nada: **reaplica tus commits encima de otra base**. Reescribe tus commits (nuevos hashes) para que parezca que partiste de lo más reciente, dejando un historial lineal.
-
-`git rebase --abort` es para abortar un rebase que quedo sin terminar.
-
-Importante, despues de hacer esto tu rama origin queda desactualizada, si el fetch era de upstream, po rlo tanto deberías hacer un git push para que se actualice.
-
-> En resumen, para el uso normal en este proyecto, usa `git pull` y si te falla usas `git rebase`; lo normal es que para este repositorio con eso te llegue, si necesitas más ayuda busca documentación real.
-
-### Resumen de un flujo normal con git para crear un nuevo PR desde cero (el PR se hace en github)
+A veces el push falla por no tener tu código actualizado. En ese caso puedes hacer `fetch` para descargar el código del remoto
 
 ```bash
+git fetch # descarga el código de origin
+git fetch upstream # solo upstream
+git fetch upstream main # solo la rama main de upstream
+```
 
+Todo esto también se puede con origin o con una url que le pases.
+
+Una vez actualizado git, puedes hacer pull o rebase
+
+```bash
+git pull # = git fetch + integrar
+git pull --rebase # igual, pero integrando con rebase
+git rebase <rama> # reaplica tus commits encima de otra rama
+git rebase --abort # aborta un rebase que quedó sin terminar
+```
+
+- `git pull` descarga los commits nuevos del remoto y los integra en tu rama actual (por defecto con `merge`).
+- `git rebase <rama>` no descarga nada: **reaplica tus commits encima de otra base**. Reescribe tus commits (nuevos hashes) para que parezca que partiste de lo más reciente, dejando un historial lineal.
+
+Después de hacer esto tu rama en origin queda desactualizada (si el fetch era de upstream), por lo tanto deberías hacer un `git push` para que se actualice.
+
+> En resumen, para el uso normal en este proyecto usa `git pull` y si te falla usas `git rebase`. Lo normal es que con eso te llegue para este repositorio, si necesitas más ayuda busca documentación real.
+
+### Resumen de un flujo normal para crear un nuevo PR desde cero
+
+El PR se hace en Github, el resto desde la terminal o con la interfaz de VScode.
+
+```bash
 git checkout main
 
 git status # si quieres saber la situación de tu rama local
 
-#si hay cambios en remoto que no tienes en local
+# si hay cambios en remoto que no tienes en local
 git pull
 
 git checkout -b rama-nueva-para-pr
 
-#cuando tengas cambios para commit
-
+# cuando tengas cambios para commit
 git add .
 
 git commit -m "style: fix button hover animation"
 
-git push # si la rama no está publicada el push falla, git ya te dice que comando usar para arreglarlo
+git push # si la rama no está publicada el push falla, git ya te dice qué comando usar para arreglarlo
 
 # a partir de aquí si quieres hacer PR debes ir a github
 ```
 
 ### Como hacer PR (solicitud de cambios) en Github
 
-> Si el remoto origin es la misma que upstream, siendo ambos el repositorio donde quieres hacer PR, entonces debes tener cuidado con no haber subido los cambios donde querías hacer PR, ya que si fue así puede que ya estén fusionados los cambios sin pasar por PR
+> Si el remoto **origin** es el mismo que **upstream**, siendo ambos el repositorio donde quieres hacer PR, ten cuidado de no haber subido los cambios donde querías hacer PR, ya que si fue así puede que ya estén fusionados sin pasar por PR, si tenías permisos.
 
-> Lor normal es que Github te muestre arriba en el repositorio tuyo o el upstream, un atajo para hacer PR de esos cambios (es amarillo, si te sale lo ves fácilmente).
-> El menu de PR es bastante intuitivo, es más sencillo aprender viendo como están hechos otros PRs.
->
-> En PR debes decidir a que rama quieres fusionar los cambios nuevos (la rama de la izquierda es del upstream y la de la derecha es de origin); el título del PR que quieres, debe seguir las normas escritas arriba del archivo; elegir una descripción, si el proyecto no tiene plantillas para los PR deberás decidir por ti mismo que deberíamos saber quienes vamos a ver esos cambios, **recomendaciones**:
->
-> - Explica que soluciona y o hacen los cambios
-> - Si hay cambios visuales: adjunta capturas o videos
-> - Si para estos cambios necesitaste o consideraste necesario hacer **Tests**: adjunta la depuración y resultados de este; lo puedes hacer adjuntado los .test al PR o mostrando la depuración del script. Esto permite a los revisores saber que probaste que funcionaba y ellos poder verificarlo más fácilmente.
-> - Avisos de bugs o regresiones: si sabes que tus cambios traen consigo errores nuevos, reabren bugs corregidos... Es mejor documentarlo.
->
-> Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de como debería ser. Github usa **Markdown**, su sintaxis es sencilla:
->
-> Título principal (solo uno por documento): # <Titulo1>
->
-> Para otros titulos vas añadiendo # para subtitulos de secciones...
->
-> Para separador por linea horizontal: ---
->
-> Para poner en negrita: pones doble \* en cada extremo del texto **<Texto>'**
->
-> Para darle formato a de código a un texto: usas triple ` al inicio y final, si haces saltos de linea puedes poner despues de los tres primeros que formato usa (`js <codigo>`)
+Lo normal es que Github te muestre arriba, en tu repositorio o en el upstream, un atajo para hacer PR de esos cambios (es amarillo, si te sale lo ves fácilmente). El menú de PR es bastante intuitivo, es más sencillo aprender viendo cómo están hechos otros PRs.
+
+#### Rama y título
+
+En el PR debes decidir a qué rama quieres fusionar los cambios nuevos (la rama de la izquierda es del upstream y la de la derecha es de origin). El título debe seguir las [normas del repositorio](#normas-del-repositorio).
+
+#### Descripción
+
+Si el proyecto no tiene plantillas para los PR deberás decidir por ti mismo qué deberíamos saber quienes vamos a ver esos cambios. Recomendaciones:
+
+- Explica qué soluciona y/o hacen los cambios.
+- Si hay cambios visuales: adjunta capturas o videos.
+- Si para estos cambios necesitaste o consideraste necesario hacer **tests**: adjunta la depuración y resultados de estos; lo puedes hacer adjuntando los `.test` al PR o mostrando la depuración del script. Esto permite a los revisores saber que probaste que funcionaba y poder verificarlo más fácilmente.
+- Avisos de bugs o regresiones: si sabes que tus cambios traen consigo errores nuevos, reabren bugs corregidos... Es mejor documentarlo.
+
+Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de cómo debería ser. 
+
+Github usa **Markdown**, su sintaxis es sencilla
+
+````md
+# Título principal (solo uno por documento)
+
+## Subtítulo (vas añadiendo # para los subtítulos de secciones)
+
+--- <!-- separador por línea horizontal -->
+
+**texto en negrita**
+
+`código en línea`
 
 ```js
-#codigo en javascript
-document.querySelector()
+// código con formato: triple ` al inicio y final, tras los tres primeros indicas el lenguaje
+document.querySelector();
 ```
+````
 
-> Cuando termines la descripción debes decidir si tu PR está acabado o no. Es común publicar PRs sin acabar cuando estos son grandes o quieres que los revisores o usuarios te vayan ayudando a terminarlo. Para marcarlo como sin acabar debes usar **Draft**, puedes hacerlo al terminar de publicarlo en la parte inferior derecha de los ajustes del PR, sitio donde tambien puedes marcar cuando termines el PR como listo para revisión ("Mark ready for review"). Durante la creación del PR puedes directamente publicarlo como draft en el boton verde que te dice "Create pull request".
+#### Draft (PR sin acabar)
 
-> Tambien existe una opción, activada por defecto, que permite a los mantenedores editar tu código; en este repositorio no la desactives sin motivo.
+Cuando termines la descripción debes decidir si tu PR está acabado o no. Es común publicar PRs sin acabar cuando estos son grandes o quieres que los revisores o usuarios te vayan ayudando a terminarlo. Para marcarlo como sin acabar debes usar **Draft**:
 
-> En el PR puedes ver a la derecha los "Reviewers" (los mantenedores) , son quienes pueden marcar tu PR como listo para fusión.
->
-> También verás "Asignees", son lo reviewers etiquetados y tú, esto solo es una etiqueta informativa, no dá ni revoca permisos.
->
-> Los "Labels" son etiquetas informativas usadas para clasificar; se usan en los **PRs** e **Issues**
->
-> Si alguna vez que tienes algo en "Milestone" significa que ese PR es uno de los que deben ser fusionados para alcanzar una meta objetivo
+- Durante la creación del PR puedes publicarlo directamente como draft en el botón verde "Create pull request".
+- Una vez publicado, en la parte inferior derecha de los ajustes del PR puedes marcarlo como listo para revisión ("Mark ready for review") cuando termines.
 
-> Una vez terminado el PR podrás seguir añadiendo cambios, editar cualquier cosa del PR, cancelarlo y borrarlo.
->
-> Cuidado con borrar la rama que vinculas al PR sin fusionar ya que los cambios desaparecerán y github no guarda una copia
-> Puedes borrar la rama una vez fusionada si no vas seguir trabajando en ella; los cambios hechos por el PR fusionado si se guardan en el historial
+También existe una opción, activada por defecto, que permite a los mantenedores editar tu código. En este repositorio no la desactives sin motivo.
 
-Con github y git puedes hacer todo esto de forma más avanzada y muchísimas cosas más .Con este manual tienes todo lo necesario para comenzar. No se tratan los **Issues** en el manual porque hasta ahora estos se tratan desde el canal de Telegram.
+#### Panel lateral del PR
+
+- **Reviewers**: los mantenedores, son quienes pueden marcar tu PR como listo para fusión.
+- **Assignees**: los reviewers etiquetados y tú. Es solo una etiqueta informativa, no da ni revoca permisos.
+- **Labels**: etiquetas informativas usadas para clasificar, se usan en los **PRs** e **Issues**.
+- **Milestone**: si tiene algo, significa que ese PR es uno de los que deben ser fusionados para alcanzar una meta objetivo.
+
+#### Después de crear el PR
+
+Una vez creado podrás seguir añadiendo cambios, editar cualquier cosa del PR, cancelarlo y borrarlo.
+
+> Cuidado con borrar la rama que vinculas al PR sin fusionar, ya que los cambios desaparecerán y Github no guarda una copia.
+
+Puedes borrar la rama una vez fusionada si no vas a seguir trabajando en ella; los cambios hechos por el PR fusionado sí se guardan en el historial.
+
+---
+
+Con Github y git puedes hacer todo esto de forma más avanzada y muchísimas cosas más. Con este manual tienes todo lo necesario para comenzar. No se tratan los **Issues** en el manual porque hasta ahora estos se tratan desde el canal de Telegram.
