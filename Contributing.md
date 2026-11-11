@@ -8,11 +8,14 @@
 
 ---
 
-## Normas
+## Normas del repositorio
 
-- Las solicitudes de cambio por norma general deben apuntar a **dev**
-- EL código debe priorizar el inglés
-- Los títulos de commits, issues , Pull requests (solicitudes de cambios) deben usar el formato **Conventional Commits** (formato: `<tipo>(<ámbito opcional>): <descripción>`)
+- Las solicitudes de cambio por norma general deben apuntar a **dev** ,los cambios a main no deben ir directos sin revisión.
+- EL código debe priorizar el inglés.
+- Los títulos de commits, issues , Pull requests (solicitudes de cambios) deben usar el formato **Conventional Commits** en inglés (formato: `<tipo>(<ámbito opcional>): <descripción>`).
+- Si perteneces al DAFIC, los Issues al canal de telegram, no al repositorio.
+- No menciones a todos los miembros usando @ , para eso usas el canal de telegram. Tampoco es recomendado usar menciones por @ sin avisar por telegram o alguna forma a ese participante, nada te asegura que vea la notificación de la mención.
+- Separa las solicitudes de cambios por asuntos. No enviar un PR con muchos cambios si no son del mismo asunto. En github se pueden enlazar PRs para facilitar la gestión de estos casos.
 
 ## Windows comandos básicos `(vacío)`
 
