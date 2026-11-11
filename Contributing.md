@@ -1,10 +1,18 @@
-- Comandos básicos de Linux/Windows
-- Comandos básicos de Git
-- Como hacer solicitud de cambios
-- Normas para las solicitudes de cambios
+# 📖 Manual de ayuda para contribuir
+
+Guía rápida para colaborar en este repositorio: comandos básicos de terminal, uso de Git y cómo enviar tus cambios.
+
+El manual está hecho para principiantes, no sustituye la documentación oficial, es para ahorrar tiempo y que puedas empezar rápido.
 
 > [!WARNING]
-> Advertencia: No te fíes nunca de los comandos que te pase una IA por un Chat (Chatgpt, claude).
+> No te fíes nunca de los comandos que te pase una IA por un chat (ChatGPT, Claude...). Entiende qué hace cada comando antes de ejecutarlo.
+
+## 📑 Índice
+
+1. [Normas del repositorio](#normas-del-repositorio)
+2. [Windows comandos básicos](#windows-comandos-básicos-vacío)
+3. [Linux comandos básicos](#linux-comandos-básicos)
+4. [Como usar Git](#como-usar-git)
 
 ---
 
