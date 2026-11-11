@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/dafic-udc/dafic-udc.github.io)](LICENSE "License")
-[![GitHub stars](https://img.shields.io/github/stars/dafic-udc/dafic-udc.github.io)](https://github.com/dafic-udc/dafic-udc.github.io/stargazers "Stars")
+[![License](<https://img.shields.io/github/license/dafic-udc/dafic-udc.github.io>)](<LICENSE> "License")
+[![GitHub stars](https://img.shields.io/github/stars/dafic-udc/dafic-udc.github.io)](<https://github.com/dafic-udc/dafic-udc.github.io/stargazers> "Stars")
 
 </div>
 
@@ -11,38 +11,34 @@
 
 O contido deste repositorio está baixo a licenza [GPL3](LICENSE).
 
-## ⚙️ Probas en local
 
-Para visualizar e probar os cambios de forma local antes de publicalos, segue estes pasos:
+## ⚙️Probas en local
 
-> [!NOTE]
-> É preciso ter instalado Python versión 3 no teu equipo.
+Para probar a web en local, segue estes pasos:
 
 1. Clona o repositorio no teu equipo.
-
-   ```bash
-    git clone https://github.com/dafic-udc/dafic-udc.github.io.git
-   ```
-
-2. Accede ao directorio `site`:
-
+     ```bash
+   git clone https://github.com/dafic-udc/dafic-udc.github.io.git
+  
+3. Accede ao directorio `site`:
    ```bash
    cd site
-   ```
+4. Inicia un servidor HTTP simple con Python:
 
-3. Inicia un servidor HTTP simple con Python:
+  ```bash
+  python3 -m http.server #porto 8000
 
-   ```bash
-   python3 -m http.server #porto 8000
+  python3 -m http.server <porto> #para elixir o porto
+```
+  > [!NOTE]
+  > É preciso ter instalado Python versión 3 no teu equipo.
 
-   python3 -m http.server <porto> # substitue <porto> para elixilo
 
-
-   # Podes usar python directamente, se apunta a python3
-   readlink -f "$(which python)" # linux: /usr/bin/python3.14
-   where python # windows (CMD): ... \Python314\python.exe
-   ```
 
 4. Abre o navegador e accede á seguinte dirección:
 
-   http://localhost:8000 _(ou ao porto que se indique na consola)_
+- http://localhost:8000
+
+  (ou ao porto que se indique na consola)
+
+Deste xeito poderás visualizar e probar os cambios de forma local antes de publicalos.
