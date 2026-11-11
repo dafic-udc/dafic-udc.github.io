@@ -289,8 +289,9 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/mglourido/dafic-udc.github.io.git # esta el la url que usó
    29460d5..27883ba  mejorar-readme -> mejorar-readme
 ```
+
 Ha veces puede que el push falle por no tener tu código actualizado, en ese caso puedes hacer
-```git fetch``` para que descargue el codigo de origin y upstream,```git fetch upstream``` si solo quieres upstream, ```git fetch upstream/main``` si solo quieres la rama main de upstream; todo esto tambien se puede con origin o con una url que le pases.
+`git fetch` para que descargue el codigo de origin y upstream,`git fetch upstream` si solo quieres upstream, `git fetch upstream/main` si solo quieres la rama main de upstream; todo esto tambien se puede con origin o con una url que le pases.
 
 Una vez actualizado git, puedes hacer pull o rebase.
 
@@ -298,9 +299,82 @@ Una vez actualizado git, puedes hacer pull o rebase.
 
 `git rebase <rama>` no descarga nada: **reaplica tus commits encima de otra base**. Reescribe tus commits (nuevos hashes) para que parezca que partiste de lo más reciente, dejando un historial lineal.
 
-```git rebase --abort``` es para abortar un rebase que quedo sin terminar.
+`git rebase --abort` es para abortar un rebase que quedo sin terminar.
 
 Importante, despues de hacer esto tu rama origin queda desactualizada, si el fetch era de upstream, po rlo tanto deberías hacer un git push para que se actualice.
 
->En resumen, para el uso normal en este proyecto, usa ```git pull``` y si te falla usas ```git rebase```; lo normal es que para este repositorio con eso te llegue, si necesitas más ayuda busca documentación real.
+> En resumen, para el uso normal en este proyecto, usa `git pull` y si te falla usas `git rebase`; lo normal es que para este repositorio con eso te llegue, si necesitas más ayuda busca documentación real.
 
+### Resumen de un flujo normal con git para crear un nuevo PR desde cero (el PR se hace en github)
+
+```bash
+
+git checkout main
+
+git status # si quieres saber la situación de tu rama local
+
+#si hay cambios en remoto que no tienes en local
+git pull
+
+git checkout -b rama-nueva-para-pr
+
+#cuando tengas cambios para commit
+
+git add .
+
+git commit -m "style: fix button hover animation"
+
+git push # si la rama no está publicada el push falla, git ya te dice que comando usar para arreglarlo
+
+# a partir de aquí si quieres hacer PR debes ir a github
+```
+
+### Como hacer PR (solicitud de cambios) en Github
+
+> Si el remoto origin es la misma que upstream, siendo ambos el repositorio donde quieres hacer PR, entonces debes tener cuidado con no haber subido los cambios donde querías hacer PR, ya que si fue así puede que ya estén fusionados los cambios sin pasar por PR
+
+> Lor normal es que Github te muestre arriba en el repositorio tuyo o el upstream, un atajo para hacer PR de esos cambios (es amarillo, si te sale lo ves fácilmente).
+> El menu de PR es bastante intuitivo, es más sencillo aprender viendo como están hechos otros PRs.
+>
+> En PR debes decidir a que rama quieres fusionar los cambios nuevos (la rama de la izquierda es del upstream y la de la derecha es de origin); el título del PR que quieres, debe seguir las normas escritas arriba del archivo; elegir una descripción, si el proyecto no tiene plantillas para los PR deberás decidir por ti mismo que deberíamos saber quienes vamos a ver esos cambios, **recomendaciones**:
+>
+> - Explica que soluciona y o hacen los cambios
+> - Si hay cambios visuales: adjunta capturas o videos
+> - Si para estos cambios necesitaste o consideraste necesario hacer **Tests**: adjunta la depuración y resultados de este; lo puedes hacer adjuntado los .test al PR o mostrando la depuración del script. Esto permite a los revisores saber que probaste que funcionaba y ellos poder verificarlo más fácilmente.
+> - Avisos de bugs o regresiones: si sabes que tus cambios traen consigo errores nuevos, reabren bugs corregidos... Es mejor documentarlo.
+>
+> Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de como debería ser. Github usa **Markdown**, su sintaxis es sencilla:
+> 
+> Título principal (solo uno por documento): # <Titulo1>
+> 
+> Para otros titulos vas añadiendo # para subtitulos de secciones...
+> 
+> Para separador por linea horizontal: ---
+> 
+> Para poner en negrita: pones doble \* en cada extremo del texto **<Texto>'**
+> 
+> Para darle formato a de código a un texto: usas triple ` al inicio y final, si haces saltos de linea puedes poner despues de los tres primeros que formato usa (```js <codigo>```)
+```js
+#codigo en javascript
+document.querySelector()
+```
+
+
+>Cuando termines la descripción debes decidir si tu PR está acabado o no. Es común publicar PRs sin acabar cuando estos son grandes o quieres que los revisores o usuarios te vayan ayudando a terminarlo. Para marcarlo como sin acabar debes usar **Draft**, puedes hacerlo al terminar de publicarlo en la parte inferior derecha de los ajustes del PR, sitio donde tambien puedes marcar cuando termines el PR como listo para revisión ("Mark ready for review"). Durante la creación del PR puedes directamente publicarlo como draft en el boton verde que te dice "Create pull request".
+
+>Tambien existe una opción, activada por defecto, que permite a los mantenedores editar tu código; en este repositorio no la desactives sin motivo.
+
+>En el PR puedes ver a la derecha los "Reviewers" (los mantenedores) , son quienes pueden marcar tu PR como listo para fusión.
+>
+>También verás "Asignees", son lo reviewers etiquetados y tú, esto solo es una etiqueta informativa, no dá ni revoca permisos.
+>
+>Los "Labels" son etiquetas informativas usadas para clasificar; se usan en los **PRs** e **Issues**
+>
+>Si alguna vez que tienes algo en "Milestone" significa que ese PR es uno de los que deben ser fusionados para alcanzar una meta objetivo
+
+> Una vez terminado el PR podrás seguir añadiendo cambios, editar cualquier cosa del PR, cancelarlo y borrarlo.
+>
+> Cuidado con borrar la rama que vinculas al PR sin fusionar ya que los cambios desaparecerán y github no guarda una copia
+> Puedes borrar la rama una vez fusionada si no vas seguir trabajando en ella; los cambios hechos por el PR fusionado si se guardan en el historial
+
+Con github y git puedes hacer todo esto de forma más avanzada y muchísimas cosas más .Con este manual tienes todo lo necesario para comenzar. No se tratan los **Issues** en el manual porque hasta ahora estos se tratan desde el canal de Telegram.
