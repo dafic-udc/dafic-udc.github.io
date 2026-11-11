@@ -14,6 +14,8 @@ El manual está hecho para principiantes, no sustituye la documentación oficial
 3. [Linux comandos básicos](#linux-comandos-básicos)
 4. [Como usar Git](#como-usar-git)
 
+En [Como usar Git](#como-usar-git) tienes integado VScode y Github
+
 ---
 
 ## Normas del repositorio
