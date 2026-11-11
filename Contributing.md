@@ -18,30 +18,40 @@
 
 ## Linux comandos básicos
 
+### Como moverse por directorios
+
 ```bash
 cd <ruta> #<ruta> es la dirección a donde quieres ir
 ```
 
 ```bash
-pwd
+pwd # te devuelve la ruta donde estás
 ```
-
-te devuelve la ruta donde estás
 
 Para acceder al directorio del usuario de la sesión
 
 ```bash
-cd ~ # ~ es tu ruta raíz del usuario ej: /home/paraguayo33/
+cd ~ # ~ es tu ruta raíz del usuario. Ej: /home/paraguayo33/
 cd /home/paraguayo33/ # es equivalente
 ```
 
-para retroceder sin poner una ruta absoluta (que vaya desde ~)
+#### Atajos de rutas relativas:
+
+Para indicar directorio actual usas "./<ruta>" o puedes no poner nada directamente "<ruta>" , no pongas "/" o te lo cojerá como ruta absoluta
 
 ```bash
-cd ..
+cd ./<ruta>
+cd <ruta>
 ```
 
-Ejemplo
+Para retroceder usando rutas relativas (relativas al directorio actual)
+
+```bash
+cd .. # retrocede al directorio anterior
+cd ../<ruta> # retrocede y se mueve a la ruta relativa indicada
+```
+
+#### Ejemplo de uso para moverse entre directorios
 
 ```bash
 pwd
@@ -67,6 +77,108 @@ cd /home/paraguayo33/Github-Repos/dafic-udc.github.io
 pwd
 /home/paraguayo33/Github-Repos/dafic-udc.github.io
 ```
+
+### Como crear carpetas
+
+```bash
+mkdir <ruta_nombre_carpeta>
+```
+
+Si quieres crear varias carpetas anidadas de una vez, creando también las intermedias que no existan, usa `-p`
+
+```bash
+mkdir -p <carpeta>/<subcarpeta>/<subsubcarpeta>
+```
+
+### Como crear archivos
+
+```bash
+touch <ruta_nombre_archivo> # crea un archivo vacío (si ya existe, solo actualiza su fecha de modificación)
+```
+
+Para crear un archivo con contenido directamente desde la terminal
+
+```bash
+echo "contenido del archivo" > <archivo> # > sobrescribe el archivo
+echo "otra línea" >> <archivo> # >> añade al final sin borrar lo anterior
+```
+
+Los **echo** pueden ser más complejos que esto, son muy útiles.
+
+Para ver el contenido de un archivo
+
+```bash
+cat <archivo>
+```
+
+### Como copiar o mover archivos a otra ruta
+
+Para copiar un archivo (el original se mantiene)
+
+```bash
+cp <archivo_origen> <ruta_destino>
+cp <archivo_origen> <ruta_destino>/<nuevo_nombre> # lo copia con otro nombre
+```
+
+Para copiar una carpeta entera con su contenido (`-r`)
+
+```bash
+cp -r <carpeta_origen> <ruta_destino>
+```
+
+Para mover un archivo o carpeta (el original deja de estar en su sitio original)
+
+```bash
+mv <origen> <ruta_destino>
+```
+
+`mv` también sirve para **renombrar**, moviéndolo "a la misma carpeta" con otro nombre
+
+```bash
+mv <nombre_viejo> <nombre_nuevo>
+```
+
+### Como borrar carpetas y archivos
+
+**Ten cuidado,en la terminal no hay papelera** , lo que borras con estos comandos se pierde para siempre.
+
+Para borrar un archivo
+
+```bash
+rm <archivo>
+```
+
+Para borrar una carpeta vacía
+
+```bash
+rmdir <carpeta>
+```
+
+Para borrar una carpeta con todo lo que contiene (`-r` = recursivo)
+
+```bash
+rm -r <carpeta>
+```
+
+Para que te pida confirmación antes de borrar cada cosa usa `-i`
+
+```bash
+rm -ri <carpeta>
+```
+
+> No uses `rm -rf` si no sabes exactamente lo que estás borrando: `-f` fuerza el borrado sin preguntar y no avisa de errores.
+
+### Como conseguir permisos administrador (root)
+
+Puede que alguna vez tegas que crear carpetas,archivos ... en directorios restringidos por permisos, o ejecutar scripts que si hagan cosas que los necesiten.
+Si es tu ordenador entonces puedes hacer directamente `sudo <codigo/lineas_comandos>` . **sudo** te da los permisos del usuario **root** (administrador), debe ir al inicio de lo que quieras ejecutar con root.
+
+#### Ejemplo de uso
+
+```bash
+sudo mkdir /etc/ejemplo # /etc suele venir restringido
+```
+
 
 ## Como usar Git
 
@@ -344,33 +456,33 @@ git push # si la rama no está publicada el push falla, git ya te dice que coman
 > - Avisos de bugs o regresiones: si sabes que tus cambios traen consigo errores nuevos, reabren bugs corregidos... Es mejor documentarlo.
 >
 > Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de como debería ser. Github usa **Markdown**, su sintaxis es sencilla:
-> 
+>
 > Título principal (solo uno por documento): # <Titulo1>
-> 
+>
 > Para otros titulos vas añadiendo # para subtitulos de secciones...
-> 
+>
 > Para separador por linea horizontal: ---
-> 
+>
 > Para poner en negrita: pones doble \* en cada extremo del texto **<Texto>'**
-> 
-> Para darle formato a de código a un texto: usas triple ` al inicio y final, si haces saltos de linea puedes poner despues de los tres primeros que formato usa (```js <codigo>```)
+>
+> Para darle formato a de código a un texto: usas triple ` al inicio y final, si haces saltos de linea puedes poner despues de los tres primeros que formato usa (`js <codigo>`)
+
 ```js
 #codigo en javascript
 document.querySelector()
 ```
 
+> Cuando termines la descripción debes decidir si tu PR está acabado o no. Es común publicar PRs sin acabar cuando estos son grandes o quieres que los revisores o usuarios te vayan ayudando a terminarlo. Para marcarlo como sin acabar debes usar **Draft**, puedes hacerlo al terminar de publicarlo en la parte inferior derecha de los ajustes del PR, sitio donde tambien puedes marcar cuando termines el PR como listo para revisión ("Mark ready for review"). Durante la creación del PR puedes directamente publicarlo como draft en el boton verde que te dice "Create pull request".
 
->Cuando termines la descripción debes decidir si tu PR está acabado o no. Es común publicar PRs sin acabar cuando estos son grandes o quieres que los revisores o usuarios te vayan ayudando a terminarlo. Para marcarlo como sin acabar debes usar **Draft**, puedes hacerlo al terminar de publicarlo en la parte inferior derecha de los ajustes del PR, sitio donde tambien puedes marcar cuando termines el PR como listo para revisión ("Mark ready for review"). Durante la creación del PR puedes directamente publicarlo como draft en el boton verde que te dice "Create pull request".
+> Tambien existe una opción, activada por defecto, que permite a los mantenedores editar tu código; en este repositorio no la desactives sin motivo.
 
->Tambien existe una opción, activada por defecto, que permite a los mantenedores editar tu código; en este repositorio no la desactives sin motivo.
-
->En el PR puedes ver a la derecha los "Reviewers" (los mantenedores) , son quienes pueden marcar tu PR como listo para fusión.
+> En el PR puedes ver a la derecha los "Reviewers" (los mantenedores) , son quienes pueden marcar tu PR como listo para fusión.
 >
->También verás "Asignees", son lo reviewers etiquetados y tú, esto solo es una etiqueta informativa, no dá ni revoca permisos.
+> También verás "Asignees", son lo reviewers etiquetados y tú, esto solo es una etiqueta informativa, no dá ni revoca permisos.
 >
->Los "Labels" son etiquetas informativas usadas para clasificar; se usan en los **PRs** e **Issues**
+> Los "Labels" son etiquetas informativas usadas para clasificar; se usan en los **PRs** e **Issues**
 >
->Si alguna vez que tienes algo en "Milestone" significa que ese PR es uno de los que deben ser fusionados para alcanzar una meta objetivo
+> Si alguna vez que tienes algo en "Milestone" significa que ese PR es uno de los que deben ser fusionados para alcanzar una meta objetivo
 
 > Una vez terminado el PR podrás seguir añadiendo cambios, editar cualquier cosa del PR, cancelarlo y borrarlo.
 >
