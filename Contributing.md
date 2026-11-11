@@ -300,10 +300,11 @@ git status
 Te saldrá la rama actual e información de los archivos (rutas). Git muchas veces muestra comandos e información de ayuda para saber qué hacer.
 
 Ejemplo actual mío
+
 ```bash
 # Tengo algunos cambios del archivo ya añadidos al commit, por eso aparece el mismo archivo en confirmados y en no rastreados
 git status
-#salida: 
+#salida:
 En la rama mejorar-readme # esta es mi rama local actual
 Tu rama está actualizada con 'origin/mejorar-readme'. # esta es mi rama remota
 
@@ -377,7 +378,7 @@ git commit -m "<mensaje>"
 
 ```bash
 git commit -m "docs: v1 contributing"
-# salida: 
+# salida:
 [mejorar-readme acc4073] docs: v1 contributing # [rama hash-corto-commit] mensaje del commit
  1 file changed, 200 insertions(+) # 1 archivo tocado, 200 líneas añadidas (0 borradas)
  create mode 100644 Contributing.md # archivo nuevo; 100644 = archivo normal (rw-r--r--)
@@ -426,6 +427,8 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa 
 
 ### Como subir los cambios al servidor (hacer push)
 
+Con VScode, donde hacías commit si hay cambios sin subir al remoto, te aparecerá "Sincronizar cambios" ("Sync changes"). Si es el primer commit puede que falle y te salte que tengas que publicar la rama; es lo mismo, pulsas el boton y listo, si falla puedes hacerlo por terminal con los comandos que se explicarán a acontinuación.
+
 ```bash
 git push # subes los commits a la ruta origin
 ```
@@ -447,7 +450,7 @@ git push upstream <rama>
 
 ```bash
 git push
-# salida: 
+# salida:
 Enumerando objetos: 4, listo.
 Contando objetos: 100% (4/4), listo.
 Compresión delta usando hasta 12 hilos
@@ -530,7 +533,7 @@ Si el proyecto no tiene plantillas para los PR deberás decidir por ti mismo qu�
 - Si para estos cambios necesitaste o consideraste necesario hacer **tests**: adjunta la depuración y resultados de estos; lo puedes hacer adjuntando los `.test` al PR o mostrando la depuración del script. Esto permite a los revisores saber que probaste que funcionaba y poder verificarlo más fácilmente.
 - Avisos de bugs o regresiones: si sabes que tus cambios traen consigo errores nuevos, reabren bugs corregidos... Es mejor documentarlo.
 
-Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de cómo debería ser. 
+Una descripción puede tener muchísimos formatos e información, aquí solo se muestra una idea inicial de cómo debería ser.
 
 Github usa **Markdown**, su sintaxis es sencilla
 
