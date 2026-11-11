@@ -35,7 +35,7 @@ Para acceder al directorio del usuario de la sesión
 
 ```bash
 cd ~ # ~ es tu ruta raíz del usuario. Ej: /home/paraguayo33/
-cd /home/paraguayo33/ # es equivalente
+cd /home/paraguayo33/ # es equivalente, no recomendado para automatizar scripts
 ```
 
 #### Atajos de rutas relativas:
