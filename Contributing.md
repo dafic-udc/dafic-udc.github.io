@@ -119,21 +119,6 @@ git remote set-url origin https://github.com/mglourido/dafic-udc.github.io.git
 #cambias "origin" por "upstream" y con eso editas upstream
 ```
 
-### Como generar una rama nueva
-
-`git checkout -b <nombre>` te genera una rama nueva usando el código que tienes en la rama donde te encontrabas, y te mueve a esa rama nueva. Si usas `git checkout <nombre>` te meuve a esa rama, sin generarla, porque ya debe existir. Si tienes cambios hechos o commits sin hacer push, se van tambien a esa rama nueva, pero se van de la rama donde estabas al hacer el checkout.
-
-Checkout puede dar fallos si tienes cambios hechos sin commit, se puedes usar `git switch -c <nombre>` para crear la rama, y `git switch <nombre>` para moverse; es más claro que checkout.
-
-### Como borrar una rama remota en tu fork
-
-`git push origin --delete <nombre>`
-
-```bash
-git branch -d <nombre>   # borra la rama local si ya está fusionada
-git branch -D <nombre>   # la fuerza aunque no esté fusionada
-```
-
 ### Como guardar cambios
 
 En git se guardan cambios haciendo **commit**. Piensa en él como checkpoints de juegos, pero más avanzados ya que te deja ver los cambios y más cosas útiles.
@@ -265,42 +250,13 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa 
 
 ```
 
+
 ### Para subir los cambios al servidor (hacer push)
 
-`git push` subes los commits a la ruta origin
+```git push``` subes los commits a la ruta origin
 
 Si no has hecho ningún push, seguramente tengas que publicar la rama nueva, git ya te dice como se hace, asi que haz git push y este te enseña el comando adaptado
-`git push --set-upstream origin <rama>`
+```git push --set-upstream origin <rama>```
 
-puedes hacer `git push origin/<rama>` por si quieres mandar eso cambios a otra rama, y cambiar origin por upstream tambien.
-
-Ejemplo real
-
-```bash
-git push
-
-Enumerando objetos: 4, listo.
-Contando objetos: 100% (4/4), listo.
-Compresión delta usando hasta 12 hilos
-Comprimiendo objetos: 100% (3/3), listo.
-Escribiendo objetos: 100% (3/3), 3.39 KiB | 3.39 MiB/s, listo.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/mglourido/dafic-udc.github.io.git # esta el la url que usó
-   29460d5..27883ba  mejorar-readme -> mejorar-readme
-```
-Ha veces puede que el push falle por no tener tu código actualizado, en ese caso puedes hacer
-```git fetch``` para que descargue el codigo de origin y upstream,```git fetch upstream``` si solo quieres upstream, ```git fetch upstream/main``` si solo quieres la rama main de upstream; todo esto tambien se puede con origin o con una url que le pases.
-
-Una vez actualizado git, puedes hacer pull o rebase.
-
-`git pull` = `git fetch` + integrar. Descarga los commits nuevos del remote y los integra en tu rama actual (por defecto con `merge`; con `git pull --rebase` usa `rebase`).
-
-`git rebase <rama>` no descarga nada: **reaplica tus commits encima de otra base**. Reescribe tus commits (nuevos hashes) para que parezca que partiste de lo más reciente, dejando un historial lineal.
-
-```git rebase --abort``` es para abortar un rebase que quedo sin terminar.
-
-Importante, despues de hacer esto tu rama origin queda desactualizada, si el fetch era de upstream, po rlo tanto deberías hacer un git push para que se actualice.
-
->En resumen, para el uso normal en este proyecto, usa ```git pull``` y si te falla usas ```git rebase```; lo normal es que para este repositorio con eso te llegue, si necesitas más ayuda busca documentación real.
+puedes hacer ```git push origin/<rama>``` por si quieres mandar eso cambios a otra rama, y cambiar origin por upstream tambien.
 
