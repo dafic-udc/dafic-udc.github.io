@@ -34,7 +34,7 @@ const activityTile = (activity) => {
 
 const showActivitiesGrid = async (containerID) => {
 
-    const DATA_URL = "/actividades/data/previous-activities.json";
+    const DATA_URL = "https://raw.githubusercontent.com/dafic-udc/dafic-activities/main/previous-activities.json";
     let activities;
 
     try {
@@ -52,8 +52,5 @@ const showActivitiesGrid = async (containerID) => {
     activities.forEach(activity => {
         container.appendChild(activityTile(activity));
     });
-
-
-
 
 }
