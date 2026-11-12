@@ -1,5 +1,5 @@
-const NEXT_ACTIVITIES_DATA_URL = '/actividades/data/next-activities.json';
-const PREVIOUS_ACTIVITIES_DATA_URL = '/actividades/data/previous-activities.json';
+const NEXT_ACTIVITIES_DATA_URL = 'https://raw.githubusercontent.com/dafic-udc/dafic-activities/main/next-activities.json';
+const PREVIOUS_ACTIVITIES_DATA_URL = 'https://raw.githubusercontent.com/dafic-udc/dafic-activities/main/previous-activities.json';
 
 const fitActivityName = (activityName) => {
 
