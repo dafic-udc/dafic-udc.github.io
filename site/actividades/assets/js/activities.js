@@ -107,13 +107,28 @@ const showNextActivities = async (containerID = 'next-activities-list') => {
     const activitiesContainer = document.getElementById(containerID);
     if (!activitiesContainer) return;
 
-    if (ACTIVITIES.length === 0) {
+    
+    if (ACTIVITIES.length === 0) {        // If no activities, show a img,a message and a link to propose an activity
 
-        // If no activities, show a message and a link to propose an activity:
-        const noActivitiesMessage = document.createElement('p');
-        noActivitiesMessage.className = 'centered';
-        noActivitiesMessage.innerText = 'Non hai actividades próximas.';
-        noActivitiesMessage.appendChild(document.createElement('br'));
+        //img
+        const noActivitiesImg = document.createElement("img");
+        const relativePath = "/assets/img/";
+        noActivitiesImg.src = relativePath + "_remplazar_imagen_fico_guapo.png"; //dir path + nameFIle.ext
+        noActivitiesImg.className = "centered";
+
+
+        //text+url
+        const noActivitiesMessage = document.createElement("p");
+        noActivitiesMessage.className = "centered";
+        noActivitiesMessage.innerText = "Non hai actividades próximas.";
+
+        const noActivitiesUrl = document.createElement("a");
+        noActivitiesUrl.innerText = "Podes propor a túa actividade";
+        noActivitiesUrl.href="https://forms.office.com/e/jC0tx2nWaM"//duplicate link from activities-box-links
+        noActivitiesMessage.appendChild(noActivitiesUrl);
+
+        //add to UI
+        activitiesContainer.appendChild(noActivitiesImg);
         activitiesContainer.appendChild(noActivitiesMessage);
     } else {
         showActivities(ACTIVITIES, containerID);

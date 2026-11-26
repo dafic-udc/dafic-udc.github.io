@@ -67,6 +67,12 @@ section#activities {
 
     #next-activities-list {
         margin: 0.5em auto;
+        p{
+            margin: 0.25em;
+            a{
+                color:var(--color-dafic);
+            }
+        }
     }
 
     #activities-box {
