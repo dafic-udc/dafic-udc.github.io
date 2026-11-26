@@ -70,7 +70,7 @@ section#activities {
         p{
             margin: 0.25em;
             a{
-                color:var(--color-dafic);
+                color:dodgerblue !important;
             }
         }
     }
